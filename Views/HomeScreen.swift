@@ -42,7 +42,7 @@ struct HomeScreen: View {
                 BottomNavBar()
                     .padding(.top)
             }
-            .background(Color("background"))
+//            .background(Color("background"))
         }
     }
 }
