@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct CartView: View {
-    @EnvironmentObject var orderManager: OrderManager
+    @EnvironmentObject var cartManager: CartManager
     
     var body: some View {
         VStack {
             ScrollView {
-                if orderManager.dishes.count > 0 {
-
+                if cartManager.dishes.count > 0 {
+                    ForEach(cartManager.dishes, id: \.id) { dish in
+                        DishInCart(dish: dish)
+                    }
                 }
                 else {
                     EmptyCart()
@@ -32,7 +34,7 @@ struct CartView: View {
 struct CartView_Previews: PreviewProvider {
     static var previews: some View {
         CartView()
-            .environmentObject(OrderManager())
+            .environmentObject(CartManager())
             .environmentObject(ViewRouter())
     }
 }

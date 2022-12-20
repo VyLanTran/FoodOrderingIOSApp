@@ -12,6 +12,7 @@ struct HomeScreen: View {
     private let filterOptions = ["Restaurant", "Dishes", "Price", "Nearby", "Time"]
     @State var selection: String = "Restaurant"
     
+    
     var body: some View {
         NavigationView {
             VStack() {
@@ -41,6 +42,7 @@ struct HomeScreen: View {
 
                 BottomNavBar()
                     .padding(.top)
+                
             }
 //            .background(Color("background"))
         }
@@ -174,4 +176,3 @@ struct OptionView: View {
         }
     }
 }
-

@@ -27,6 +27,6 @@ struct RestaurantsView: View {
 
 struct RestaurantsView_Previews: PreviewProvider {
     static var previews: some View {
-        RestaurantsView(restaurantCategory: RestaurantCategory.american)
+        RestaurantsView(restaurantCategory: RestaurantCategory.thai)
     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class OrderManager: ObservableObject {
+class CartManager: ObservableObject {
     @Published private(set) var dishes: [Dish] = []
     @Published private(set) var total: Double = 0
     

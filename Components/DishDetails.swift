@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DishDetails: View {
+    @EnvironmentObject var cartManager: CartManager
     var dish: Dish
     @Environment(\.presentationMode) var presentationMode
     
@@ -79,70 +80,104 @@ struct DishDetails: View {
         
             Spacer()
             
-            AddToCartView()
-                .padding()
-        }
-        
-        
-        
-        
-    }
-}
-
-struct DishCard_Previews: PreviewProvider {
-    static var previews: some View {
-        DishDetails(dish: Dish.all[0])
-    }
-}
-
-struct AddToCartView: View {
-    @State private var quantity: Int = 1
-    @Environment(\.presentationMode) var presentationMode
-    
-    var body: some View {
+//            OrderButtons(dish: dish)
+//                .padding()
             
-        VStack(spacing: 12) {
-            Divider()
+//            AddToCartButton(dish: dish).environmentObject(CartManager())
             
-            HStack(spacing: 15) {
-                // Adjust quantity
-                HStack(spacing: 15) {
-                    Button(action: {
-                        if (quantity > 1) {
-                            quantity -= 1
-                        }
-                    }, label: {
-                        Image(systemName: "minus")
-                            .foregroundColor(quantity > 1 ? .black : .gray)
-                    })
-                    
-                    Text("\(quantity)")
-                    
-                    Button(action: {
-                        quantity += 1
-                    }, label: {
-                        Image(systemName: "plus")
-                            .foregroundColor(.black)
-                    })
-                }
-                .frame(width: 120, height: 50)
-                .background(Color(hue: 1.0, saturation: 0, brightness: 0.85))
-                .clipShape(RoundedRectangle(cornerRadius: 40, style: .continuous))
-                .padding(.horizontal)
-                
-                // Add to Cart button
-                Button {
-                    presentationMode.wrappedValue.dismiss()
-                } label: {
-                    Text("Add to Cart")
-                        .font(.headline)
-                        .frame(width: 200, height: 50)
-                        .foregroundColor(.white)
-                        .background(.black)
-                        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-                }
+            // Add to cart button should update the number on the cart label
+            Button {
+                cartManager.addToCart(dish: dish)
+                print(cartManager.dishes.count)
+    //            presentationMode.wrappedValue.dismiss()
+            } label: {
+                Text("Add to Cart")
+                    .font(.headline)
+                    .frame(width: 200, height: 50)
+                    .foregroundColor(.white)
+                    .background(.black)
+                    .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
             }
         }
-        .frame(height: -10)
+        
     }
 }
+
+struct DishDetails_Previews: PreviewProvider {
+    static var previews: some View {
+        DishDetails(dish: Dish.all[0])
+            .environmentObject(CartManager())
+    }
+}
+
+//struct OrderButtons: View {
+//    var dish: Dish
+////    @EnvironmentObject var cartManager: CartManager
+//
+//    var body: some View {
+//        VStack(spacing: 12) {
+//            Divider()
+//
+//            HStack(spacing: 15) {
+//                // Adjust quantity button
+//                QuantityButton()
+//                // Add to Cart button
+//                AddToCartButton(dish: dish).environmentObject(CartManager())
+//            }
+//        }
+//        .frame(height: 0)
+//    }
+//}
+
+//struct QuantityButton: View {
+//
+//    @State private var quantity: Int = 1
+//
+//    var body: some View {
+//        HStack(spacing: 15) {
+//            Button(action: {
+//                if (quantity > 1) {
+//                    quantity -= 1
+//                }
+//            }, label: {
+//                Image(systemName: "minus")
+//                    .foregroundColor(quantity > 1 ? .black : .gray)
+//            })
+//
+//            Text("\(quantity)")
+//
+//            Button(action: {
+//                quantity += 1
+//            }, label: {
+//                Image(systemName: "plus")
+//                    .foregroundColor(.black)
+//            })
+//        }
+//        .frame(width: 120, height: 50)
+//        .background(Color(hue: 1.0, saturation: 0, brightness: 0.85))
+//        .clipShape(RoundedRectangle(cornerRadius: 40, style: .continuous))
+//        .padding(.horizontal)
+//    }
+//}
+
+//struct AddToCartButton: View {
+//
+//    @State var dish: Dish
+//    @Environment(\.presentationMode) var presentationMode
+//    @EnvironmentObject var cartManager: CartManager
+//
+//    var body: some View {
+//        Button {
+//            cartManager.addToCart(dish: dish)
+//            print(cartManager.dishes.count)
+////            presentationMode.wrappedValue.dismiss()
+//        } label: {
+//            Text("Add to Cart")
+//                .font(.headline)
+//                .frame(width: 200, height: 50)
+//                .foregroundColor(.white)
+//                .background(.black)
+//                .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+//        }
+//    }
+//}

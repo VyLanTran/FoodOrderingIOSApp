@@ -18,14 +18,23 @@ enum Category: String, CaseIterable, Identifiable {
 }
 
 struct Dish: Identifiable {
-    let id = UUID()
-    let name: String
-    let image: String
-    let price: Double
-    let description: String
-    let restaurant: String
-    let category: Category.RawValue
-    let isPopular: Bool
+//    let id = UUID()
+//    let name: String
+//    let image: String
+//    let price: Double
+//    let description: String
+//    let restaurant: String
+//    let category: Category.RawValue
+//    let isPopular: Bool
+    
+    var id = UUID()
+    var name: String
+    var image: String
+    var price: Double
+    var description: String
+    var restaurant: String
+    var category: Category.RawValue
+    var isPopular: Bool
     
 //    let isNew: Bool
 //    let extra: String

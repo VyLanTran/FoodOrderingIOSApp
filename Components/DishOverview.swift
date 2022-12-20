@@ -10,6 +10,7 @@ import SwiftUI
 struct DishOverview: View {
     var dish: Dish
     @State var showSheet: Bool = false
+    @StateObject var cartManager = CartManager()
     
     var body: some View {
         VStack {
@@ -63,7 +64,7 @@ struct DishOverview: View {
                 showSheet.toggle()
             }
             .sheet(isPresented: $showSheet) {
-                DishDetails(dish: dish)
+                DishDetails(dish: dish).environmentObject(cartManager)
             }
         }
     }

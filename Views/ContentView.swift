@@ -16,7 +16,7 @@ struct ContentView: View {
         case .homeScreen:
             HomeScreen()
         case .cartView:
-            CartView().environmentObject(OrderManager())
+            CartView().environmentObject(CartManager())
         }
     }
 }

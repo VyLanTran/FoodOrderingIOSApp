@@ -9,20 +9,21 @@ import SwiftUI
 
 struct BottomNavBar: View {
     @State var selectedId: Int = 0
-    
+    @StateObject var cartManager = CartManager()
     
     var body: some View {
         VStack {
+             
             HStack(spacing: 25) {
                 BottomNavBarItem(id: 1, image: Image(systemName: "house"), text: "Home", page: .homeScreen, selectedId: $selectedId)
                 
-//                BottomNavBarItem(id: 2, image: Image(systemName: "clock.arrow.circlepath"), text: "History", page: <#Page#>, selectedId: $selectedId)
+                BottomNavBarItem(id: 2, image: Image(systemName: "clock.arrow.circlepath"), text: "History", page: .homeScreen, selectedId: $selectedId)
                 
-                CartLabel(selectedId: $selectedId, numberOfItems: 3)
+                CartLabel(selectedId: $selectedId, numberOfItems: cartManager.dishes.count)
                 
-//                BottomNavBarItem(id: 4, image: Image(systemName: "bell"), text: "Notifications", page: <#Page#>, selectedId: $selectedId)
+                BottomNavBarItem(id: 4, image: Image(systemName: "bell"), text: "Notifications", page: .homeScreen, selectedId: $selectedId)
                 
-//                BottomNavBarItem(id: 5, image: Image(systemName: "person.circle"), text: "Account", page: <#Page#>, selectedId: $selectedId)
+                BottomNavBarItem(id: 5, image: Image(systemName: "person.circle"), text: "Account", page: .homeScreen, selectedId: $selectedId)
                 
 
                 

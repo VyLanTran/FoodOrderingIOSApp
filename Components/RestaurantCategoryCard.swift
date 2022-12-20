@@ -27,6 +27,6 @@ struct RestaurantCategoryCard: View {
 
 struct RestaurantCategoryCard_Previews: PreviewProvider {
     static var previews: some View {
-        RestaurantCategoryCard(category: "American", image: Image("American"))
+        RestaurantCategoryCard(category: "Thai", image: Image("Thai"))
     }
 }
