@@ -30,6 +30,6 @@ struct RestaurantMenu: View {
 
 struct RestaurantMenu_Previews: PreviewProvider {
     static var previews: some View {
-        RestaurantMenu(restaurant: Restaurant.all[0])
+        RestaurantMenu(restaurant: Restaurant.all[28])
     }
 }

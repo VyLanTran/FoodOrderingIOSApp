@@ -33,12 +33,22 @@ struct DishOverview: View {
                     Text(dish.name)
                         .font(.system(size: 16))
                         .bold()
-                    
-                    HStack(spacing: 30) {
-                        Text("$\(dish.price, specifier: "%.2f")")
-                            .font(.subheadline)
-                            .fontWeight(.light)
-                        
+                   
+                    Text("$\(dish.price, specifier: "%.2f")")
+                        .font(.subheadline)
+                        .fontWeight(.light)
+
+                    HStack(spacing: 35) {
+                        if (dish.isNew) {
+                            Text("New")
+                                .foregroundColor(.white)
+                                .background(
+                                    Rectangle()
+                                        .fill(Color(hue: 1.0, saturation: 0.93, brightness: 0.89))
+                                        .frame(width: 55, height: 25)
+                                        .cornerRadius(15)
+                                )
+                        }
                         if (dish.isPopular) {
                             Text("Popular")
                                 .foregroundColor(.white)
@@ -50,6 +60,7 @@ struct DishOverview: View {
                                 )
                         }
                     }
+                    .offset(x: 9)
                 }
                 
                 Spacer()
@@ -72,6 +83,6 @@ struct DishOverview: View {
 
 struct DishOverview_Previews: PreviewProvider {
     static var previews: some View {
-        DishOverview(dish: Dish.all[0])
+        DishOverview(dish: Dish.all[1])
     }
 }

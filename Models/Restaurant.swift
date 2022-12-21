@@ -240,14 +240,6 @@ extension Restaurant {
         ),
         Restaurant(
             category: "Japanese",
-            name: "Gyu-Kaku",
-            image: "https://houstonsgotspice.com/wp-content/uploads/2020/03/IMG_0839-scaled.jpg",
-            rating: 3,
-            address: "1951 E 3rd St, Williamsport, PA 17701",
-            menu: Dish.all.filter { $0.restaurant == "Gyu-Kaku" }
-        ),
-        Restaurant(
-            category: "Japanese",
             name: "Ootoya",
             image: "https://ootoya.us/wp-content/uploads/2020/04/43_katsu-ju.jpg",
             rating: 3,
@@ -272,22 +264,6 @@ extension Restaurant {
             rating: 3,
             address: "1951 E 3rd St, Williamsport, PA 17701",
             menu: Dish.all.filter { $0.restaurant == "Lotus of Siam" }
-        ),
-        Restaurant(
-            category: "Thai",
-            name: "Lers Ros",
-            image: "https://s.hdnux.com/photos/10/05/43/2119925/10/rawImage.jpg",
-            rating: 3,
-            address: "1951 E 3rd St, Williamsport, PA 17701",
-            menu: Dish.all.filter { $0.restaurant == "Lers Ros" }
-        ),
-        Restaurant(
-            category: "Thai",
-            name: "Asia Market Thai Restaurant",
-            image: "https://media-cdn.tripadvisor.com/media/photo-s/1a/a0/ca/3c/spring-rolls.jpg",
-            rating: 3,
-            address: "1951 E 3rd St, Williamsport, PA 17701",
-            menu: Dish.all.filter { $0.restaurant == "Asia Market Thai Restaurant" }
         ),
         Restaurant(
             category: "Thai",
