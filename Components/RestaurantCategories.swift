@@ -1,5 +1,5 @@
 //
-//  RestaurantsView.swift
+//  RestaurantCategories.swift
 //  FoodOrdering
 //
 //  Created by Vy Tran on 11/20/22.

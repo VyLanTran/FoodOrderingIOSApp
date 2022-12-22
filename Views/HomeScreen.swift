@@ -11,6 +11,7 @@ struct HomeScreen: View {
     
     private let filterOptions = ["Restaurant", "Dishes", "Price", "Nearby", "Time"]
     @State var selection: String = "Restaurant"
+    @StateObject var cartManager: CartManager = CartManager()
     
     
     var body: some View {
@@ -46,14 +47,11 @@ struct HomeScreen: View {
             }
 //            .background(Color("background"))
         }
+        .environmentObject(cartManager)
     }
 }
 
-struct HomeScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeScreen().environmentObject(ViewRouter())
-    }
-}
+
 
 struct AppBarView: View {
     var body: some View {
@@ -174,5 +172,11 @@ struct OptionView: View {
                 Color.clear.frame(height: 2)
             }
         }
+    }
+}
+
+struct HomeScreen_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeScreen().environmentObject(ViewRouter())
     }
 }

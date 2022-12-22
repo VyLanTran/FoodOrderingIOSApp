@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RestaurantList: View {
+    
     var restaurants: [Restaurant]
     let columns = [GridItem(.adaptive(minimum: 160), spacing: 30)]
     

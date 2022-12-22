@@ -9,21 +9,22 @@ import SwiftUI
 
 struct BottomNavBar: View {
     @State var selectedId: Int = 0
-    @StateObject var cartManager = CartManager()
     
     var body: some View {
         VStack {
              
             HStack(spacing: 25) {
-                BottomNavBarItem(id: 1, image: Image(systemName: "house"), text: "Home", page: .homeScreen, selectedId: $selectedId)
+                BottomNavBarItem(id: 1, image: Image(systemName: "house.fill"), text: "Home", page: .homeScreen, selectedId: $selectedId)
                 
                 BottomNavBarItem(id: 2, image: Image(systemName: "clock.arrow.circlepath"), text: "History", page: .homeScreen, selectedId: $selectedId)
                 
-                CartLabel(selectedId: $selectedId, numberOfItems: cartManager.dishes.count)
+//                CartLabel(selectedId: $selectedId, numberOfItems: cartManager.dishes.count)
+//                CartButton(numberOfProducts: cartManager.dishes.count)
+                CartButton()
                 
                 BottomNavBarItem(id: 4, image: Image(systemName: "bell"), text: "Notifications", page: .homeScreen, selectedId: $selectedId)
                 
-                BottomNavBarItem(id: 5, image: Image(systemName: "person.circle"), text: "Account", page: .homeScreen, selectedId: $selectedId)
+                BottomNavBarItem(id: 5, image: Image(systemName: "person.fill"), text: "Account", page: .homeScreen, selectedId: $selectedId)
                 
 
                 
@@ -36,11 +37,7 @@ struct BottomNavBar: View {
     }
 }
 
-struct BottomNavBar_Previews: PreviewProvider {
-    static var previews: some View {
-        BottomNavBar().environmentObject(ViewRouter())
-    }
-}
+
 
 struct BottomNavBarItem: View {
     var id: Int
@@ -74,7 +71,7 @@ struct CartLabel: View {
     var body: some View {
         ZStack(alignment: .topTrailing) {
             // Cart image
-            BottomNavBarItem(id: 3, image: Image(systemName: "cart"), text: "Cart", page: .cartView, selectedId: $selectedId)
+            BottomNavBarItem(id: 3, image: Image(systemName: "cart.fill"), text: "Cart", page: .cartView, selectedId: $selectedId)
             
             if numberOfItems > 0 {
                 Text("\(numberOfItems)")
@@ -86,5 +83,11 @@ struct CartLabel: View {
                     .cornerRadius(50)
             }
         }
+    }
+}
+
+struct BottomNavBar_Previews: PreviewProvider {
+    static var previews: some View {
+        BottomNavBar().environmentObject(ViewRouter())
     }
 }

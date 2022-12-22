@@ -21,3 +21,6 @@ class CartManager: ObservableObject {
         total -= dish.price
     }
 }
+
+
+

@@ -7,27 +7,43 @@
 
 import SwiftUI
 
-struct DishOverview: View {
+struct DishCard: View {
     var dish: Dish
     @State var showSheet: Bool = false
-    @StateObject var cartManager = CartManager()
+    
+    @EnvironmentObject var cartManager: CartManager
     
     var body: some View {
         VStack {
             Divider()
             
             HStack(spacing: 20) {
-                AsyncImage(
-                    url: URL(string: dish.image),
-                    content: { image in
-                        image.resizable()
-                    },
-                    placeholder: {
-                        Image(systemName: "photo")
+                ZStack(alignment: .topTrailing) {
+                    AsyncImage(
+                        url: URL(string: dish.image),
+                        content: { image in
+                            image.resizable()
+                        },
+                        placeholder: {
+                            Image(systemName: "photo")
+                        }
+                    )
+                    .frame(width: 120, height: 100)
+                    .padding(.leading)
+                    
+                    Button {
+                        cartManager.addToCart(dish: dish)
+                        print(cartManager.dishes.count)
+                    } label: {
+                        Image(systemName: "plus")
+                            .padding(10)
+                            .foregroundColor(.white)
+                            .background(.black)
+                            .cornerRadius(50)
+                            .padding()
                     }
-                )
-                .frame(width: 120, height: 100)
-                .padding(.leading)
+
+                }
                 
                 VStack(alignment: .leading, spacing: 10) {
                     Text(dish.name)
@@ -71,18 +87,19 @@ struct DishOverview: View {
                     .padding(.trailing)
             }
             .frame(height: 120)
-            .onTapGesture {
-                showSheet.toggle()
-            }
-            .sheet(isPresented: $showSheet) {
-                DishDetails(dish: dish).environmentObject(cartManager)
-            }
+//            .onTapGesture {
+//                showSheet.toggle()
+//            }
+//            .sheet(isPresented: $showSheet) {
+//                DishDetails(dish: dish).environmentObject(cartManager)
+//            }
         }
     }
 }
 
-struct DishOverview_Previews: PreviewProvider {
+struct DishCard_Previews: PreviewProvider {
     static var previews: some View {
-        DishOverview(dish: Dish.all[1])
+        DishCard(dish: Dish.all[1])
+            .environmentObject(CartManager())
     }
 }

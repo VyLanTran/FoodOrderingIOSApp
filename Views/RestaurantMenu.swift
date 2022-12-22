@@ -14,8 +14,11 @@ struct RestaurantMenu: View {
         VStack {
             ScrollView {
                 VStack {
+                    CartButton()
+                    
+                    
                     ForEach(restaurant.menu, id: \.id) { dish in
-                        DishOverview(dish: dish)
+                        DishCard(dish: dish)
                     }
                     
                     Divider()
@@ -30,6 +33,6 @@ struct RestaurantMenu: View {
 
 struct RestaurantMenu_Previews: PreviewProvider {
     static var previews: some View {
-        RestaurantMenu(restaurant: Restaurant.all[28])
+        RestaurantMenu(restaurant: Restaurant.all[2])
     }
 }

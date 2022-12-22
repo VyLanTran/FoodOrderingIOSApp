@@ -9,15 +9,15 @@ import SwiftUI
 
 struct DishDetails: View {
     @EnvironmentObject var cartManager: CartManager
-    var dish: Dish
     @Environment(\.presentationMode) var presentationMode
+    var dish: Dish
     
     var body: some View {
         
         VStack(alignment: .leading) {
             
             ZStack(alignment: .topLeading) {
-                // Image
+                // Image of the dish
                 AsyncImage(
                     url: URL(string: dish.image),
                     content: { image in
@@ -44,7 +44,7 @@ struct DishDetails: View {
             .padding(.vertical)
             
             VStack(alignment: .leading, spacing: 15) {
-                // Name
+                // Name of the dish
                 Text(dish.name)
                     .padding(.leading)
                     .font(.title2)
