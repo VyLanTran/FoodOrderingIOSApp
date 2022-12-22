@@ -17,10 +17,8 @@ struct BottomNavBar: View {
                 BottomNavBarItem(id: 1, image: Image(systemName: "house.fill"), text: "Home", page: .homeScreen, selectedId: $selectedId)
                 
                 BottomNavBarItem(id: 2, image: Image(systemName: "clock.arrow.circlepath"), text: "History", page: .homeScreen, selectedId: $selectedId)
-                
-//                CartLabel(selectedId: $selectedId, numberOfItems: cartManager.dishes.count)
-//                CartButton(numberOfProducts: cartManager.dishes.count)
-                CartButton()
+              
+                CartLabel(selectedId: $selectedId)
                 
                 BottomNavBarItem(id: 4, image: Image(systemName: "bell"), text: "Notifications", page: .homeScreen, selectedId: $selectedId)
                 
@@ -66,15 +64,15 @@ struct BottomNavBarItem: View {
 
 struct CartLabel: View {
     @Binding var selectedId: Int
-    var numberOfItems: Int
+    @EnvironmentObject var cartManager: CartManager
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
             // Cart image
             BottomNavBarItem(id: 3, image: Image(systemName: "cart.fill"), text: "Cart", page: .cartView, selectedId: $selectedId)
             
-            if numberOfItems > 0 {
-                Text("\(numberOfItems)")
+            if cartManager.dishes.count > 0 {
+                Text("\(cartManager.dishes.count)")
                     .font(.system(size: 12))
                     .bold()
                     .frame(width: 15, height: 15)

@@ -14,9 +14,6 @@ struct RestaurantMenu: View {
         VStack {
             ScrollView {
                 VStack {
-                    CartButton()
-                    
-                    
                     ForEach(restaurant.menu, id: \.id) { dish in
                         DishCard(dish: dish)
                     }

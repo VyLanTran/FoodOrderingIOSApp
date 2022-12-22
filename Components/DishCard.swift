@@ -11,7 +11,7 @@ struct DishCard: View {
     var dish: Dish
     @State var showSheet: Bool = false
     
-    @EnvironmentObject var cartManager: CartManager
+//    @EnvironmentObject var cartManager: CartManager
     
     var body: some View {
         VStack {
@@ -31,17 +31,17 @@ struct DishCard: View {
                     .frame(width: 120, height: 100)
                     .padding(.leading)
                     
-                    Button {
-                        cartManager.addToCart(dish: dish)
-                        print(cartManager.dishes.count)
-                    } label: {
-                        Image(systemName: "plus")
-                            .padding(10)
-                            .foregroundColor(.white)
-                            .background(.black)
-                            .cornerRadius(50)
-                            .padding()
-                    }
+//                    Button {
+//                        cartManager.addToCart(dish: dish)
+//                        print(cartManager.dishes.count)
+//                    } label: {
+//                        Image(systemName: "plus")
+//                            .padding(10)
+//                            .foregroundColor(.white)
+//                            .background(.black)
+//                            .cornerRadius(50)
+//                            .padding()
+//                    }
 
                 }
                 
@@ -87,12 +87,12 @@ struct DishCard: View {
                     .padding(.trailing)
             }
             .frame(height: 120)
-//            .onTapGesture {
-//                showSheet.toggle()
-//            }
-//            .sheet(isPresented: $showSheet) {
-//                DishDetails(dish: dish).environmentObject(cartManager)
-//            }
+            .onTapGesture {
+                showSheet.toggle()
+            }
+            .sheet(isPresented: $showSheet) {
+                DishDetails(dish: dish)
+            }
         }
     }
 }
@@ -100,6 +100,5 @@ struct DishCard: View {
 struct DishCard_Previews: PreviewProvider {
     static var previews: some View {
         DishCard(dish: Dish.all[1])
-            .environmentObject(CartManager())
     }
 }

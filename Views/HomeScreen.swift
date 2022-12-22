@@ -9,11 +9,10 @@ import SwiftUI
 
 struct HomeScreen: View {
     
-    private let filterOptions = ["Restaurant", "Dishes", "Price", "Nearby", "Time"]
     @State var selection: String = "Restaurant"
     @StateObject var cartManager: CartManager = CartManager()
-    
-    
+    private let filterOptions = ["Restaurant", "Dishes", "Price", "Nearby", "Time"]
+
     var body: some View {
         NavigationView {
             VStack() {
@@ -133,9 +132,10 @@ struct FilterSelectedView: View {
 }
 
 struct OptionsView: View {
-    private let options = ["Restaurant", "Dishes", "Price", "Nearby", "Time"]
+    
     @State private var selectedIndex: Int = 0
     @Binding var selection: String
+    private let options = ["Restaurant", "Dishes", "Price", "Nearby", "Time"]
     
     var body: some View {
         ScrollView (.horizontal, showsIndicators: false) {
