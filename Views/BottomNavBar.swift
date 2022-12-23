@@ -24,8 +24,6 @@ struct BottomNavBar: View {
                 
                 BottomNavBarItem(id: 5, image: Image(systemName: "person.fill"), text: "Account", page: .homeScreen, selectedId: $selectedId)
                 
-
-                
             }
             .frame(maxWidth: .infinity, alignment: .bottom)
             .padding(.top)
@@ -44,7 +42,7 @@ struct BottomNavBarItem: View {
     var page: Page
     @Binding var selectedId: Int
     @EnvironmentObject var viewRouter: ViewRouter
-    
+
     var body: some View {
         VStack {
             image
@@ -61,6 +59,8 @@ struct BottomNavBarItem: View {
         }
     }
 }
+
+
 
 struct CartLabel: View {
     @Binding var selectedId: Int
@@ -86,6 +86,6 @@ struct CartLabel: View {
 
 struct BottomNavBar_Previews: PreviewProvider {
     static var previews: some View {
-        BottomNavBar().environmentObject(ViewRouter())
+        BottomNavBar()
     }
 }

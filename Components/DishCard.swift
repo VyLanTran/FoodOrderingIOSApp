@@ -1,5 +1,5 @@
 //
-//  DishOverview.swift
+//  DishCard.swift
 //  FoodOrdering
 //
 //  Created by Vy Tran on 11/22/22.
@@ -10,9 +10,7 @@ import SwiftUI
 struct DishCard: View {
     var dish: Dish
     @State var showSheet: Bool = false
-    
-//    @EnvironmentObject var cartManager: CartManager
-    
+        
     var body: some View {
         VStack {
             Divider()
@@ -30,19 +28,6 @@ struct DishCard: View {
                     )
                     .frame(width: 120, height: 100)
                     .padding(.leading)
-                    
-//                    Button {
-//                        cartManager.addToCart(dish: dish)
-//                        print(cartManager.dishes.count)
-//                    } label: {
-//                        Image(systemName: "plus")
-//                            .padding(10)
-//                            .foregroundColor(.white)
-//                            .background(.black)
-//                            .cornerRadius(50)
-//                            .padding()
-//                    }
-
                 }
                 
                 VStack(alignment: .leading, spacing: 10) {

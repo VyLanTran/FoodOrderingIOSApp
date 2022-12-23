@@ -11,10 +11,13 @@ import SwiftUI
 struct FoodOrderingApp: App {
     
     @StateObject var viewRouter = ViewRouter()
+    @StateObject var cartManager = CartManager()
     
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(viewRouter)
+            ContentView()
+                .environmentObject(viewRouter)
+                .environmentObject(cartManager)
         }
     }
 }

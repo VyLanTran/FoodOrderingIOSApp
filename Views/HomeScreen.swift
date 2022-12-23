@@ -10,7 +10,6 @@ import SwiftUI
 struct HomeScreen: View {
     
     @State var selection: String = "Restaurant"
-    @StateObject var cartManager: CartManager = CartManager()
     private let filterOptions = ["Restaurant", "Dishes", "Price", "Nearby", "Time"]
 
     var body: some View {
@@ -46,7 +45,6 @@ struct HomeScreen: View {
             }
 //            .background(Color("background"))
         }
-        .environmentObject(cartManager)
     }
 }
 
@@ -177,6 +175,6 @@ struct OptionView: View {
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen().environmentObject(ViewRouter())
+        HomeScreen()
     }
 }

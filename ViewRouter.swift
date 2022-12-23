@@ -9,7 +9,7 @@ import SwiftUI
 
 class ViewRouter: ObservableObject {
     
-//    @Published var currentPage: Page = .cartView
     @Published var currentPage: Page = .homeScreen
+//    @Published var currentPage: Page = .cartView
     
 }

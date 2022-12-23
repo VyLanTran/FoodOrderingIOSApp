@@ -31,15 +31,12 @@ struct CartView: View {
     }
 }
 
-struct CartView_Previews: PreviewProvider {
-    static var previews: some View {
-        CartView()
-            .environmentObject(CartManager())
-            .environmentObject(ViewRouter())
-    }
-}
+
 
 struct EmptyCart: View {
+    
+    @EnvironmentObject var viewRouter: ViewRouter
+    
     var body: some View {
         VStack(spacing: 40) {
             Image("empty_cart")
@@ -52,7 +49,7 @@ struct EmptyCart: View {
             
             // Start Ordering button
             Button {
-                
+                viewRouter.currentPage = .homeScreen
             } label: {
                 Text("Start Ordering")
                     .font(.headline)
@@ -65,3 +62,12 @@ struct EmptyCart: View {
         }
     }
 }
+
+
+struct CartView_Previews: PreviewProvider {
+    static var previews: some View {
+        CartView()
+            .environmentObject(CartManager())
+    }
+}
+

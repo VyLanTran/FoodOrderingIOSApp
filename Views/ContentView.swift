@@ -16,14 +16,17 @@ struct ContentView: View {
         case .homeScreen:
             HomeScreen()
         case .cartView:
-            CartView().environmentObject(CartManager())
+            CartView()
+
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environmentObject(ViewRouter())
+        ContentView()
+            .environmentObject(ViewRouter())
+            .environmentObject(CartManager())
     }
 }
 
