@@ -10,6 +10,7 @@ import SwiftUI
 struct DishDetails: View {
     
     @Environment(\.presentationMode) var presentationMode
+    @StateObject var quantityViewModel = QuantityViewModel()
     var dish: Dish
     
     var body: some View {
@@ -83,47 +84,53 @@ struct DishDetails: View {
             // Buttons to adjust the quantity and add to cart
             VStack(spacing: 12) {
                 Divider()
-    
+
                 HStack(spacing: 15) {
                     // Adjust quantity button
-                    QuantityButton()
+                    QuantityButton(quantityViewModel: quantityViewModel)
                     // Add to Cart button
-                    AddToCartButton(dish: dish)
+                    AddToCartButton(dish: dish, quantityViewModel: quantityViewModel)
                 }
             }
             .frame(height: 0)
             .padding()
+            
         }
         
     }
 }
 
+class QuantityViewModel: ObservableObject {
+    @Published var quantity = 1
+}
+
 
 struct QuantityButton: View {
-
-    @State private var quantity: Int = 1
+    
+    @ObservedObject var quantityViewModel: QuantityViewModel
 
     var body: some View {
+
         HStack(spacing: 15) {
             Button(action: {
-                if (quantity > 1) {
-                    quantity -= 1
+                if (quantityViewModel.quantity > 1) {
+                    quantityViewModel.quantity -= 1
                 }
             }, label: {
                 Image(systemName: "minus")
-                    .foregroundColor(quantity > 1 ? .black : .gray)
+                    .foregroundColor(quantityViewModel.quantity > 1 ? .black : .gray)
             })
 
-            Text("\(quantity)")
-
+            Text("\(quantityViewModel.quantity)")
+            
             Button(action: {
-                quantity += 1
+                quantityViewModel.quantity += 1
             }, label: {
                 Image(systemName: "plus")
                     .foregroundColor(.black)
             })
+
             
-//            return quantity
         }
         .frame(width: 120, height: 50)
         .background(Color(hue: 1.0, saturation: 0, brightness: 0.85))
@@ -137,10 +144,14 @@ struct AddToCartButton: View {
     @State var dish: Dish
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var cartManager: CartManager
+    @ObservedObject var quantityViewModel: QuantityViewModel
 
     var body: some View {
         Button {
-            cartManager.addToCart(dish: dish)
+            for index in 0...quantityViewModel.quantity-1 {
+                cartManager.addToCart(dish: dish)
+            }
+            
             presentationMode.wrappedValue.dismiss()
         } label: {
             Text("Add to Cart")
