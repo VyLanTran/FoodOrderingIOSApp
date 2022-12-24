@@ -13,9 +13,9 @@ struct CartView: View {
     var body: some View {
         VStack {
             ScrollView {
-                if cartManager.dishes.count > 0 {
-                    ForEach(cartManager.dishes, id: \.id) { dish in
-                        DishInCart(dish: dish)
+                if cartManager.numberOfDishes > 0 {
+                    ForEach(Array(cartManager.dishes.keys), id: \.self) { restaurant in
+                        Text(restaurant)
                     }
                 }
                 else {

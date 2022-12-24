@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum RestaurantCategory: String, CaseIterable, Identifiable  {
+enum RestaurantCategory: String, CaseIterable, Identifiable {
     var id: String { self.rawValue }
 
     case american = "American"

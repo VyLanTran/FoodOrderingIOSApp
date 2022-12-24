@@ -8,18 +8,36 @@
 import Foundation
 
 class CartManager: ObservableObject {
-    @Published private(set) var dishes: [Dish] = []
+//    @Published private(set) var dishes: [Dish] = []
+    @Published private(set) var dishes = [String : [Dish]]()
+    @Published private(set) var numberOfDishes: Int = 0
     @Published private(set) var total: Double = 0
     
+    
     func addToCart(dish: Dish) {
-        dishes.append(dish)
+        if dishes.keys.contains(dish.restaurant) {
+            dishes[dish.restaurant]?.append(dish)
+        }
+        else {
+            dishes[dish.restaurant] = [dish]
+        }
+        
+        numberOfDishes += 1
         total += dish.price
     }
     
-    func removeFromCart(dish: Dish) {
-        dishes = dishes.filter { $0.id != dish.id }
-        total -= dish.price
-    }
+//    func addToCart(dish: Dish) {
+//        dishes.append(dish)
+//        total += dish.price
+//        if dishes.keys.contains(dish.restaurant) {
+//
+//        }
+//    }
+    
+//    func removeFromCart(dish: Dish) {
+//        dishes = dishes.filter { $0.id != dish.id }
+//        total -= dish.price
+//    }
 }
 
 
