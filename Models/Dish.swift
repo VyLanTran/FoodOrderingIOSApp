@@ -18,7 +18,7 @@ enum Category: String, CaseIterable, Identifiable {
     
 }
 
-struct Dish: Identifiable {
+struct Dish: Identifiable, Hashable {
     var id = UUID()
     var name: String
     var image: String

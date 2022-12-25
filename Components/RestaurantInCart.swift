@@ -12,6 +12,28 @@ struct RestaurantInCart: View {
     @EnvironmentObject var cartManager: CartManager
     var restaurant: Restaurant
     
+    func countItems() -> Int {
+        var numberOfItems = 0
+        let restaurantName = restaurant.name
+        
+        for dish in cartManager.order[restaurantName]!.keys {
+            numberOfItems += cartManager.order[restaurantName]![dish]!
+        }
+
+        return numberOfItems
+    }
+    
+    func computeSubtotal()  -> Double {
+        var subtotal = 0.0
+        let restaurantName = restaurant.name
+        
+        for dish in cartManager.order[restaurantName]!.keys {
+            subtotal += dish.price * Double(cartManager.order[restaurantName]![dish]!)
+        }
+        
+        return subtotal
+    }
+    
     var body: some View {
         VStack {
             Divider()
@@ -33,8 +55,25 @@ struct RestaurantInCart: View {
                     Text(restaurant.name)
                         .font(.system(size: 16))
                         .bold()
-                   
-                    Text("\(cartManager.dishes[restaurant.name]?.count ?? 0)")
+                    
+                    let numberOfItems = countItems()
+                    let subtotal = computeSubtotal()
+                    
+                    HStack {
+                        if (numberOfItems == 1) {
+                            Text("1 item")
+                                .font(.system(size: 12))
+                        }
+                        else {
+                            Text("\(numberOfItems)"  + " items")
+                                .font(.system(size: 12))
+                        }
+                        
+                        Text("•")
+                        
+                        Text("$\(subtotal, specifier: "%.2f")")
+                            .font(.system(size: 12))
+                    }
                 }
                 
                 Spacer()
@@ -45,6 +84,8 @@ struct RestaurantInCart: View {
             }
             .frame(height: 100)
         }
+        
+        
     }
 }
 

@@ -8,17 +8,23 @@
 import Foundation
 
 class CartManager: ObservableObject {
-    @Published private(set) var dishes = [String : [Dish]]()
+//    @Published private(set) var dishes = [String : [Dish]]()
+    @Published private(set) var order = [String : [Dish : Int]]()
     @Published private(set) var numberOfItems: Int = 0
     @Published private(set) var total: Double = 0
     
     
     func addToCart(dish: Dish) {
-        if dishes.keys.contains(dish.restaurant) {
-            dishes[dish.restaurant]?.append(dish)
+        if order.keys.contains(dish.restaurant) {
+            if (order[dish.restaurant]!.keys.contains(dish)) {
+                order[dish.restaurant]?[dish]? += 1
+            }
+            else {
+                order[dish.restaurant]?[dish] = 1
+            }
         }
         else {
-            dishes[dish.restaurant] = [dish]
+            order[dish.restaurant] = [dish : 1]
         }
 
         numberOfItems += 1

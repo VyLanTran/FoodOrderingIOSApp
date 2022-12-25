@@ -20,7 +20,7 @@ struct CartView: View {
                     .padding()
                 
                 if cartManager.numberOfItems > 0 {
-                    ForEach(Array(cartManager.dishes.keys), id: \.self) { restaurantName in
+                    ForEach(Array(cartManager.order.keys), id: \.self) { restaurantName in
 
                         var restaurant = Restaurant.all.filter { $0.name == restaurantName }[0]
                         RestaurantInCart(restaurant: restaurant)
