@@ -74,8 +74,8 @@ extension Restaurant {
             address: "1951 E 3rd St, Williamsport, PA 17701",
             menu: Dish.all.filter { $0.restaurant == "The Cheesecake Factory" }
         ),
-        
-        
+
+
         // CHINESE
         Restaurant(
             category: "Chinese",
@@ -117,8 +117,8 @@ extension Restaurant {
             address: "1951 E 3rd St, Williamsport, PA 17701",
             menu: Dish.all.filter { $0.restaurant == "Din Tai Fung" }
         ),
-        
-        
+
+
         // MEXICAN
         Restaurant(
             category: "Mexican",
@@ -160,8 +160,8 @@ extension Restaurant {
             address: "1951 E 3rd St, Williamsport, PA 17701",
             menu: Dish.all.filter { $0.restaurant == "Pappasito’s Cantina" }
         ),
-        
-        
+
+
         // ITALIAN
         Restaurant(
             category: "Italian",
@@ -203,8 +203,8 @@ extension Restaurant {
             address: "1951 E 3rd St, Williamsport, PA 17701",
             menu: Dish.all.filter { $0.restaurant == "Bertucci’s" }
         ),
-        
-        
+
+
         // JAPANESE
         Restaurant(
             category: "Japanese",
@@ -254,8 +254,8 @@ extension Restaurant {
             address: "1951 E 3rd St, Williamsport, PA 17701",
             menu: Dish.all.filter { $0.restaurant == "Ippudo" }
         ),
-        
-        
+
+
         // THAI
         Restaurant(
             category: "Thai",
@@ -280,7 +280,7 @@ extension Restaurant {
             rating: 3,
             address: "1951 E 3rd St, Williamsport, PA 17701",
             menu: Dish.all.filter { $0.restaurant == "Sticky Rice" }
-        ),
+        )
     ]
 }
     

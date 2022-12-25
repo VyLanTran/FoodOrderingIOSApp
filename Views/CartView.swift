@@ -13,20 +13,26 @@ struct CartView: View {
     var body: some View {
         VStack {
             ScrollView {
-                if cartManager.numberOfDishes > 0 {
-                    ForEach(Array(cartManager.dishes.keys), id: \.self) { restaurant in
-                        Text(restaurant)
+                Text("My Order")
+                    .font(.title)
+                    .bold()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
+                
+                if cartManager.numberOfItems > 0 {
+                    ForEach(Array(cartManager.dishes.keys), id: \.self) { restaurantName in
+
+                        var restaurant = Restaurant.all.filter { $0.name == restaurantName }[0]
+                        RestaurantInCart(restaurant: restaurant)
                     }
                 }
                 else {
                     EmptyCart()
                 }
             }
-            .navigationTitle("My Order")
             .padding(.top)
             
             BottomNavBar()
-
         }
     }
 }

@@ -112,6 +112,7 @@ extension Dish {
             price: 14.99,
             description: "A pound of chicken wings fried then coated with our fiery Nashville-style dry rub. Served with our house-made Blue Cheese dressing and celery",
             restaurant: "Outback Steakhouse",
+//            restaurant: Restaurant.all[1],
             category: "Appetizer"
         ),
         Dish(
@@ -164,8 +165,8 @@ extension Dish {
             category: "Drink",
             isPopular: true
         ),
-        
-        
+
+
         Dish(
             name: "Mozzarella Sticks",
             image: "https://images.ctfassets.net/l5fkpck1mwg3/79ppjVk4WLDzPkwE83Y4T5/3c09d886460e67ce3acf4f1e86705554/Appetizers_Mozzarella_Sticks.png?fm=avif&w=500&q=80",
@@ -214,8 +215,8 @@ extension Dish {
             restaurant: "Buffalo Wild Wings",
             category: "Drink"
         ),
-        
-        
+
+
         Dish(
             name: "Tempura Crunch Sashimi Tuna",
             image: "https://olo-images-live.imgix.net/75/75b8c2e4a0cf4eb48eba7110161cf91f.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=528&h=352&fit=fill&fm=png32&bg=transparent&s=5bee4e5e7a1e1be90b28346b0ebf7100",
@@ -256,8 +257,8 @@ extension Dish {
             restaurant: "Bonefish Grill",
             category: "Dessert"
         ),
-        
-        
+
+
         Dish(
             name: "Ahi Poke Nachos*",
             image: "https://olo-images-live.imgix.net/70/70b402a5d4624b458dff0098d2ec4d0b.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1200&h=800&fit=fill&fm=png32&bg=transparent&s=399a7f313d6a0e806a1bc84792c0ebec",
@@ -290,8 +291,8 @@ extension Dish {
             restaurant: "The Cheesecake Factory",
             category: "Dessert"
         ),
-        
-        
+
+
         Dish(
             name: "Chicken Egg Roll",
             image: "https://olo-images-live.imgix.net/52/524bbb9023e2409b8d3fceae944a808f.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=810&h=540&fit=crop&fm=png32&s=4f4cc30df356786bbe3968181f8c5160",
@@ -323,8 +324,8 @@ extension Dish {
             isPopular: true,
             isNew: true
         ),
-        
-        
+
+
         Dish(
             name: "Handmade Dumplings",
             image: "https://www.pfchangs.com/images/default-source/menu/dim-sum/porkdumplings-6ct-1200x80088af8643-30cc-4ab3-bfa5-58d30b740709.jpg?sfvrsn=710a7282_3",
@@ -357,8 +358,8 @@ extension Dish {
             restaurant: "P.F. Chang’s",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Potstickers",
             image: "https://www.leeannchin.com/assets/media/menu/potstickers.jpg",
@@ -383,8 +384,8 @@ extension Dish {
             restaurant: "Leann Chin",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Steamed Soup with Bone-in Chicken",
             image: "https://www.dintaifungusa.com/us/image/2449",
@@ -401,8 +402,8 @@ extension Dish {
             restaurant: "Din Tai Fung",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Salad",
             image: "https://www.chipotle.com/content/dam/poc/order/images/entrees/salad.jpg",
@@ -443,8 +444,8 @@ extension Dish {
             restaurant: "Chipotle",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Steak Fajita Quesadilla",
             image: "https://olo-images-live.imgix.net/69/69517a6039d245ffb42c483a9f7940f3.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1050&h=699&fit=fill&fm=png32&bg=transparent&s=6b22a2e9abef1357daf9b0b00169dcaa",
@@ -461,8 +462,8 @@ extension Dish {
             restaurant: "Qdoba Mexican Eats",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Nacho Fries",
             image: "https://www.tacobell.com/images/28095_nacho_fries_269x269.jpg",
@@ -484,8 +485,8 @@ extension Dish {
             restaurant: "Taco Bell",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Moe's Famous Queso",
             image: "https://www.moes.com/-/media/moes/menu/sides/moes_457694_menu-image-updates_891x490_queso_v1.jpg?v=1&d=20201125T100843Z&h=490&w=891&la=en&hash=D59264BB89F016C535D235E6F140F6C2",
@@ -502,8 +503,8 @@ extension Dish {
             restaurant: "Moe’s Southwest Grill",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Pappasito's Salad",
             image: "https://files.pappasitos.com/images/dyn/menus/menu_pic_397.jpg",
@@ -520,8 +521,8 @@ extension Dish {
             restaurant: "Pappasito’s Cantina",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Baked Italian Meatballs",
             image: "https://deliverlogic-common-assets.s3.amazonaws.com/editable/images/kentucky/menuitems/2798.jpg",
@@ -546,8 +547,8 @@ extension Dish {
             restaurant: "Fazoli’s",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Spinach-Artichoke Dip",
             image: "https://media.olivegarden.com/en_us/images/product/Spinach-Artichoke-Dip-dpv-1180x730.jpg",
@@ -572,8 +573,8 @@ extension Dish {
             restaurant: "Olive Garden",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Mediterranean Shrimp Pasta Salad",
             image: "https://www.unicornsinthekitchen.com/wp-content/uploads/2019/05/Creamy-Shrimp-Pasta-Salad-square.jpg",
@@ -590,8 +591,8 @@ extension Dish {
             restaurant: "Spaghetti Warehouse",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Meatballs & Ricotta",
             image: "https://olo-images-live.imgix.net/93/935968739f0d4f5a8bad4cd45f25975a.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=528&h=352&fit=fill&fm=png32&bg=transparent&s=690fe453015024797683f070f4309a28",
@@ -616,8 +617,8 @@ extension Dish {
             restaurant: "Carrabba’s Italian Grill",
             category: "Dessert"
         ),
-        
-        
+
+
         Dish(
             name: "Classic Margherita",
             image: "https://images-gmi-pmc.edge-generalmills.com/d35faf33-2f42-4dac-88d8-ba9d52d6e4bf.jpg",
@@ -642,8 +643,8 @@ extension Dish {
             restaurant: "Bertucci’s",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Soy Egg",
             image: "https://cdn.gadis.co.id/bucket-gadis-production/wysywig-contents/1597156171.png",
@@ -659,8 +660,8 @@ extension Dish {
             restaurant: "Tenya Japanese Eatery",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Fried Chicken Egg Salad",
             image: "https://ichibanyausa.com/wp-content/uploads/2022/05/Fried-Chicken-Egg-Salad.jpg",
@@ -682,8 +683,8 @@ extension Dish {
             restaurant: "CoCo Ichibanya",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Tochin Classic Tokyo Tonkotsu Ramen",
             image: "https://uploads-ssl.webflow.com/5eb9f44f335cd359a5405ea5/5eb9f44f335cd323f4405efa_Tonchin_3_2019_1875_websize.jpg",
@@ -700,8 +701,8 @@ extension Dish {
             restaurant: "Tonchin",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Tempura Appetizer",
             image: "https://img1.wsimg.com/isteam/ip/6e70ee99-c0d1-4374-bc41-c276b44a9cd0/CE74F67F-5FD2-4F24-A1B2-DECFB38D8358.jpeg/:/rs=w:720,h:540,cg:true,m/cr=w:720,h:540",
@@ -718,8 +719,8 @@ extension Dish {
             restaurant: "Sushi Tama",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Ebi Dashimaki",
             image: "https://ootoya.us/wp-content/uploads/2021/06/menu-11.jpg",
@@ -744,8 +745,8 @@ extension Dish {
             restaurant: "Ootoya",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "IPPUDO Buns",
             image: "https://ippudo-us.com/wordpress/wp-content/themes/ippudo-theme/img/photo_01.png",
@@ -762,8 +763,8 @@ extension Dish {
             restaurant: "Ippudo",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Khao Soi",
             image: "https://inquiringchef.com/wp-content/uploads/2021/02/Khao-Soi-Noodles-square.jpg",
@@ -780,8 +781,8 @@ extension Dish {
             restaurant: "Lotus of Siam",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Satay Chicken",
             image: "https://rasamalaysia.com/wp-content/uploads/2019/04/chicken-satay-thumb.jpg",
@@ -806,8 +807,8 @@ extension Dish {
             restaurant: "Ruan Thai",
             category: "Main"
         ),
-        
-        
+
+
         Dish(
             name: "Beef Skewer",
             image: "https://iwashyoudry.com/wp-content/uploads/2017/07/Thai-Beef-Skewers-3.jpg",
@@ -831,7 +832,7 @@ extension Dish {
             description: "Stick Rice seasoned with coconut milk and sugar served with mango and coconut cream",
             restaurant: "Sticky Rice",
             category: "Dessert"
-        ),
+        )
 
     ]
 }

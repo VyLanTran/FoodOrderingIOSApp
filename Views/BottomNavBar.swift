@@ -72,8 +72,8 @@ struct CartLabel: View {
             BottomNavBarItem(id: 3, image: Image(systemName: "cart.fill"), text: "Cart", page: .cartView, selectedId: $selectedId)
             
 
-            if cartManager.numberOfDishes > 0 {
-                Text("\(cartManager.numberOfDishes)")
+            if cartManager.numberOfItems > 0 {
+                Text("\(cartManager.numberOfItems)")
                     .font(.system(size: 12))
                     .bold()
                     .frame(width: 15, height: 15)
