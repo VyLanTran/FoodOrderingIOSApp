@@ -48,7 +48,7 @@ extension Dish {
         Dish(
             name: "White Wine and Roasted-Garlic Mussels",
             image: "https://img-ecomm-rl-prod.azureedge.net/ecomm-image/640x360/0001127M_5A4252D9CF97737FE053046613AC9B28.jpg?t=2019-09-05T15:31:01",
-            price: 20.00,
+            price: 12.50,
             description: "The best of the ocean — and the kitchen — fits in one little bowl. As rich and delicious as lobster bisque soup can be, it’s a lobster bisque recipe that beats all",
             restaurant: "Red Lobster",
             category: "Appetizer"
@@ -56,7 +56,7 @@ extension Dish {
         Dish(
             name: "Lobster Bisque",
             image: "https://img-ecomm-rl-prod.azureedge.net/ecomm-image/640x360/0001017M_A45BCFBE56A8C3C7E053046613AC5940.jpg?t=2020-04-30T15:50:51",
-            price: 20,
+            price: 7.30,
             description: "",
             restaurant: "Red Lobster",
             category: "SoupAndSide",
@@ -66,7 +66,7 @@ extension Dish {
         Dish(
             name: "New England Clam Chowder",
             image: "https://img-ecomm-rl-prod.azureedge.net/ecomm-image/640x360/0001002M_88C889E454C80E10E053046613AC6A61.jpg?t=2020-04-14T19:23:42",
-            price: 20,
+            price: 7.00,
             description: "",
             restaurant: "Red Lobster",
             category: "SoupAndSide"
@@ -74,7 +74,7 @@ extension Dish {
         Dish(
             name: "Caesar Salad",
             image: "https://img-ecomm-rl-prod.azureedge.net/ecomm-image/640x360/0006084M_5A920E1DC3F6D892E053046613AC34AA.jpg?t=2019-09-05T15:23:05",
-            price: 20,
+            price: 5.80,
             description: "",
             restaurant: "Red Lobster",
             category: "SoupAndSide"
@@ -82,7 +82,7 @@ extension Dish {
         Dish(
             name: "Rock Lobster and Shrimp",
             image: "https://img-ecomm-rl-prod.azureedge.net/ecomm-image/640x360/0030028M_E0DD5AA517B581ABE053077A13AC28EA.jpg?t=2022-06-09T13:44:34",
-            price: 20,
+            price: 21.00,
             description: "",
             restaurant: "Red Lobster",
             category: "Main",
@@ -91,7 +91,7 @@ extension Dish {
         Dish(
             name: "Seaside Shrimp Trio",
             image: "https://img-ecomm-rl-prod.azureedge.net/ecomm-image/640x360/0002486M_5A4252D9CFEC737FE053046613AC9B28.jpg?t=2022-06-30T19:42:53",
-            price: 20,
+            price: 21.50,
             description: "",
             restaurant: "Red Lobster",
             category: "Main"
@@ -99,7 +99,7 @@ extension Dish {
         Dish(
             name: "Chocolate Wave Cake",
             image: "https://img-ecomm-rl-prod.azureedge.net/ecomm-image/640x360/0005121M_5A4252D9D0E6737FE053046613AC9B28.jpg?t=2020-05-31T13:51:19",
-            price: 20,
+            price: 14.60,
             description: "",
             restaurant: "Red Lobster",
             category: "Dessert"
@@ -112,7 +112,6 @@ extension Dish {
             price: 14.99,
             description: "A pound of chicken wings fried then coated with our fiery Nashville-style dry rub. Served with our house-made Blue Cheese dressing and celery",
             restaurant: "Outback Steakhouse",
-//            restaurant: Restaurant.all[1],
             category: "Appetizer"
         ),
         Dish(

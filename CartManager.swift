@@ -8,7 +8,7 @@
 import Foundation
 
 class CartManager: ObservableObject {
-//    @Published private(set) var dishes = [String : [Dish]]()
+    
     @Published private(set) var order = [String : [Dish : Int]]()
     @Published private(set) var numberOfItems: Int = 0
     @Published private(set) var total: Double = 0

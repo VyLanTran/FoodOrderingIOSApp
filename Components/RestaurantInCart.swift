@@ -49,11 +49,12 @@ struct RestaurantInCart: View {
                     }
                 )
                 .frame(width: 80, height: 80)
+                .clipShape(Circle())
                 .padding(.leading)
                 
                 VStack(alignment: .leading, spacing: 10) {
                     Text(restaurant.name)
-                        .font(.system(size: 16))
+                        .font(.system(size: 18))
                         .bold()
                     
                     let numberOfItems = countItems()
@@ -62,17 +63,17 @@ struct RestaurantInCart: View {
                     HStack {
                         if (numberOfItems == 1) {
                             Text("1 item")
-                                .font(.system(size: 12))
+                                .font(.system(size: 14))
                         }
                         else {
                             Text("\(numberOfItems)"  + " items")
-                                .font(.system(size: 12))
+                                .font(.system(size: 14))
                         }
                         
                         Text("•")
                         
                         Text("$\(subtotal, specifier: "%.2f")")
-                            .font(.system(size: 12))
+                            .font(.system(size: 14))
                     }
                 }
                 
