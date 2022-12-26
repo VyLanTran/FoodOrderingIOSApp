@@ -11,6 +11,7 @@ struct RestaurantInCart: View {
     
     @EnvironmentObject var cartManager: CartManager
     var restaurant: Restaurant
+    @State var showSheet: Bool = false
     
     func countItems() -> Int {
         var numberOfItems = 0
@@ -85,8 +86,13 @@ struct RestaurantInCart: View {
             }
             .frame(height: 100)
         }
-        
-        
+        .onTapGesture {
+            showSheet.toggle()
+        }
+        .sheet(isPresented: $showSheet) {
+            OrderDetails(restaurant: restaurant, dishes: cartManager.order[restaurant.name]!)
+                .presentationDetents([.fraction(0.75)])
+        }
     }
 }
 

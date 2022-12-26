@@ -9,19 +9,18 @@ import SwiftUI
 
 struct OrderDetails: View {
     
-    @EnvironmentObject var cartManager: CartManager
     var restaurant: Restaurant
     var dishes: [Dish: Int]
     
-//    func computeSubtotal()  -> Double {
-//        var subtotal = 0.0
-//
-//        for dish in dishes.keys {
-//            subtotal += dish.price * Double(dishes[dish]!)
-//        }
-//
-//        return subtotal
-//    }
+    func computeSubtotal()  -> Double {
+        var subtotal = 0.0
+
+        for dish in dishes.keys {
+            subtotal += dish.price * Double(dishes[dish]!)
+        }
+
+        return subtotal
+    }
     
     var body: some View {
         VStack {
@@ -29,6 +28,7 @@ struct OrderDetails: View {
             Text(restaurant.name)
                 .font(.system(size: 20))
                 .bold()
+                .padding([.top])
             
             Divider()
                 .frame(height: 2)
@@ -47,11 +47,8 @@ struct OrderDetails: View {
                         .bold()
                     Spacer()
                     
-//                    Text("$\(computeSubtotal())")
-//                        .font(.system(size: 20))
-//                        .bold()
-                    
-                    Text("$123.5")
+                    let subtotal = computeSubtotal()
+                    Text("$\(subtotal, specifier: "%.2f")")
                         .font(.system(size: 20))
                         .bold()
                 }
@@ -61,9 +58,9 @@ struct OrderDetails: View {
             Divider()
                 .frame(height: 2)
                 .overlay(Color(hue: 0, saturation: 0, brightness: 0.83))
+                .padding([.bottom])
             
-            Spacer()
-            
+                        
             // Buttons to Checkout and Add items
             VStack(spacing: 30) {
                 // Checkout button
@@ -123,13 +120,13 @@ struct ItemRow: View {
                 
                 Text("$\(dish.price * Double(quantity), specifier: "%.2f")")
             }
-            .padding([.leading, .trailing], 20)
-            .frame(height: 80)
+            .padding()
+            .padding([.leading], 10)
+            .frame(height: 70)
             
             Divider()
                 .padding([.leading, .trailing])
         }
-//        .background(.red)
     }
 }
 

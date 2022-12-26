@@ -22,7 +22,8 @@ struct CartView: View {
                 if cartManager.numberOfItems > 0 {
                     ForEach(Array(cartManager.order.keys), id: \.self) { restaurantName in
 
-                        var restaurant = Restaurant.all.filter { $0.name == restaurantName }[0]
+                        let restaurant = Restaurant.all.filter { $0.name == restaurantName }[0]
+                        
                         RestaurantInCart(restaurant: restaurant)
                     }
                 }
