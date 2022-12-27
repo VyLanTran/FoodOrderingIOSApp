@@ -9,9 +9,7 @@ import SwiftUI
 
 struct CartView: View {
     @EnvironmentObject var cartManager: CartManager
-    @State var test: [String:Int] = ["S": 1, "B": 2, "C": 3, "F": 3, "J": 3]
-    
-    
+        
     // Old version
 //    var body: some View {
 //        VStack {
@@ -55,7 +53,7 @@ struct CartView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
 
-            if cartManager.numberOfItems > 0 {
+            if cartManager.getNumberOfItems() > 0 {
                 List {
                     listRestaurant(for: Array(cartManager.order.keys))
                 }

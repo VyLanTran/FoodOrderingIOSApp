@@ -17,8 +17,10 @@ struct RestaurantInCart: View {
         var numberOfItems = 0
         let restaurantName = restaurant.name
         
-        for dish in cartManager.order[restaurantName]!.keys {
-            numberOfItems += cartManager.order[restaurantName]![dish]!
+        if cartManager.order.keys.contains(restaurantName) {
+            for dish in cartManager.order[restaurantName]!.keys {
+                numberOfItems += cartManager.order[restaurantName]![dish]!
+            }
         }
 
         return numberOfItems
@@ -28,8 +30,10 @@ struct RestaurantInCart: View {
         var subtotal = 0.0
         let restaurantName = restaurant.name
         
-        for dish in cartManager.order[restaurantName]!.keys {
-            subtotal += dish.price * Double(cartManager.order[restaurantName]![dish]!)
+        if cartManager.order.keys.contains(restaurantName) {
+            for dish in cartManager.order[restaurantName]!.keys {
+                subtotal += dish.price * Double(cartManager.order[restaurantName]![dish]!)
+            }
         }
         
         return subtotal

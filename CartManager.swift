@@ -11,7 +11,7 @@ class CartManager: ObservableObject {
 
     // order is a dictionary of the form [restaurantName : [Dish : numberOfItems]]
     @Published public var order = [String : [Dish : Int]]()
-    @Published private(set) var numberOfItems: Int = 0
+//    @Published private var numberOfItems: Int = 0
 //    @Published private(set) var total: Double = 0
 
     func addToCart(dish: Dish) {
@@ -27,7 +27,7 @@ class CartManager: ObservableObject {
             order[dish.restaurant] = [dish : 1]
         }
 
-        numberOfItems += 1
+//        numberOfItems += 1
 //        total += dish.price
     }
     
@@ -44,6 +44,16 @@ class CartManager: ObservableObject {
 //        dishes = dishes.filter { $0.id != dish.id }
 //        total -= dish.price
 //    }
+    
+    func getNumberOfItems() -> Int {
+        var count = 0
+        for dishes in Array(order.values) {
+            for quantity in Array(dishes.values) {
+                count += quantity
+            }
+        }
+        return count
+    }
 }
 
 
