@@ -11,6 +11,7 @@ struct OrderDetails: View {
     
     var restaurant: Restaurant
     var dishes: [Dish: Int]
+    @State var showSheet: Bool = false
     
     func computeSubtotal()  -> Double {
         var subtotal = 0.0
@@ -80,7 +81,7 @@ struct OrderDetails: View {
                 
                 // Add items button
                 Button {
-                    print("kdjf")
+                    showSheet.toggle()
                 } label: {
                     Text("Add items")
                         .font(.system(size: 22))
@@ -91,6 +92,9 @@ struct OrderDetails: View {
                                 .fill(Color(hue: 0, saturation: 0, brightness: 0.87))
                                 .frame(width: 350 , height: 50)
                         )
+                }
+                .sheet(isPresented: $showSheet) {
+                    RestaurantMenu(restaurant: restaurant)
                 }
             }
         }

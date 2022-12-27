@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RestaurantCategoryCard: View {
+struct CategoryCard: View {
     let category: String
     let image: Image
     
@@ -25,8 +25,8 @@ struct RestaurantCategoryCard: View {
     }
 }
 
-struct RestaurantCategoryCard_Previews: PreviewProvider {
+struct CategoryCard_Previews: PreviewProvider {
     static var previews: some View {
-        RestaurantCategoryCard(category: "Thai", image: Image("Thai"))
+        CategoryCard(category: "Thai", image: Image("Thai"))
     }
 }

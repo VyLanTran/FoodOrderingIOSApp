@@ -15,7 +15,7 @@ struct RestaurantCategories: View {
                     NavigationLink {
                         RestaurantsView(restaurantCategory: restaurantCategory)
                     } label: {
-                        RestaurantCategoryCard(category: restaurantCategory.rawValue, image: Image("\(restaurantCategory.rawValue)"))
+                        CategoryCard(category: restaurantCategory.rawValue, image: Image("\(restaurantCategory.rawValue)"))
                     }
                     .navigationBarHidden(true)
                     .foregroundColor(.black)

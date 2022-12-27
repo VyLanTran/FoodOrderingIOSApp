@@ -141,7 +141,7 @@ struct EmptyCart: View {
         VStack(spacing: 40) {
             Image("empty_cart")
                 .resizable()
-                .aspectRatio(contentMode: .fill)
+                .aspectRatio(contentMode: .fit)
             
             Text("You haven't started an order yet")
                 .font(.title3)
@@ -166,8 +166,10 @@ struct EmptyCart: View {
 
 struct CartView_Previews: PreviewProvider {
     static var previews: some View {
-        CartView()
-            .environmentObject(CartManager())
+//        CartView()
+//            .environmentObject(CartManager())
+        
+        EmptyCart()
     }
 }
 

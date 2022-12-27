@@ -21,6 +21,7 @@ struct RestaurantList: View {
                     } label: {
                         RestaurantCard(restaurant: restaurant)
                     }
+                    .navigationBarTitle("")
                 }
             }
         }

@@ -13,6 +13,10 @@ struct RestaurantMenu: View {
     
     var body: some View {
         VStack {
+            Text(restaurant.name)
+                .font(.system(size: 26))
+                .bold()
+            
             ScrollView {
                 VStack {
                     ForEach(restaurant.menu, id: \.id) { dish in

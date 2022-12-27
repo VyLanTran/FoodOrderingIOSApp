@@ -1,5 +1,5 @@
 //
-//  RestaurantView.swift
+//  RestaurantsView.swift
 //  FoodOrdering
 //
 //  Created by Vy Tran on 11/21/22.
@@ -17,8 +17,13 @@ struct RestaurantsView: View {
     
     var body: some View {
         VStack() {
+            VStack {
+                Text(restaurantCategory.rawValue)
+            }
+            .frame(height: 0)
+            
             RestaurantList(restaurants: restaurants)
-                .navigationTitle(Text(restaurantCategory.rawValue))
+//                .navigationTitle(Text(restaurantCategory.rawValue))
             
             BottomNavBar()
         }
