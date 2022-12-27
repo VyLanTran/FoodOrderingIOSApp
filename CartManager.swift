@@ -8,12 +8,12 @@
 import Foundation
 
 class CartManager: ObservableObject {
-    
-    @Published private(set) var order = [String : [Dish : Int]]()
+
+    // order is a dictionary of the form [restaurantName : [Dish : numberOfItems]]
+    @Published public var order = [String : [Dish : Int]]()
     @Published private(set) var numberOfItems: Int = 0
-    @Published private(set) var total: Double = 0
-    
-    
+//    @Published private(set) var total: Double = 0
+
     func addToCart(dish: Dish) {
         if order.keys.contains(dish.restaurant) {
             if (order[dish.restaurant]!.keys.contains(dish)) {
@@ -28,8 +28,16 @@ class CartManager: ObservableObject {
         }
 
         numberOfItems += 1
-        total += dish.price
+//        total += dish.price
     }
+    
+    // Remove the whole order of a restaurant
+//    func removeRestaurant(restaurant: String) {
+//        if order.keys.contains(restaurant) {
+//            order[restaurant] = nil
+//        }
+//        // TODO: update numberOfItems
+//    }
 
     
 //    func removeFromCart(dish: Dish) {

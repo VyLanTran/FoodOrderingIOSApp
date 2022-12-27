@@ -323,6 +323,54 @@ extension Dish {
             isPopular: true,
             isNew: true
         ),
+        
+        
+        Dish(
+            name: "Pork and Shrimp Egg Roll",
+            image: "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/cki3ja1xqqsswfitc9hk",
+            price: 2.95,
+            description: "Crispy dough filled with minced vegetables",
+            restaurant: "Mark Pi's",
+            category: "Appetizer"
+        ),
+        Dish(
+            name: "4 Piece Crab Rangoon",
+            image: "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/v6xipqwnaydipthm8zcx",
+            price: 4.50,
+            description: "Fried wonton wrapper filled with crab and cream cheese",
+            restaurant: "Mark Pi's",
+            category: "Appetizer"
+        ),
+        Dish(
+            name: "Hot and Sour Soup",
+            image: "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/q2n0uncvyg9ydlucwpzp",
+            price: 4.35,
+            description: "Soup that is both spicy and sour, typically flavored with hot pepper and vinegar",
+            restaurant: "Mark Pi's",
+            category: "SoupAndSide"
+        ),
+        Dish(
+            name: "Almond Boneless Chicken",
+            image: "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/fuxno6pxbpuv3o97qdyb",
+            price: 10.75,
+            restaurant: "Mark Pi's",
+            category: "Main"
+        ),
+        Dish(
+            name: "Teriyaki Chicken",
+            image: "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/subsfiolulqwe80bucyc",
+            price: 10.75,
+            description: "Poultry marinated or glazed in a soy based sauce",
+            restaurant: "Mark Pi's",
+            category: "Main"
+        ),
+        Dish(
+            name: "Gang Pang Chicken",
+            image: "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/lvfs5v5dtaq2s9gl4dpr",
+            price: 10.75,
+            restaurant: "Mark Pi's",
+            category: "Main"
+        ),
 
 
         Dish(

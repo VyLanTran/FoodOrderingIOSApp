@@ -9,33 +9,128 @@ import SwiftUI
 
 struct CartView: View {
     @EnvironmentObject var cartManager: CartManager
+    @State var test: [String:Int] = ["S": 1, "B": 2, "C": 3, "F": 3, "J": 3]
     
+    
+    // Old version
+//    var body: some View {
+//        VStack {
+//            Text("My Order")
+//                .font(.title)
+//                .bold()
+//                .frame(maxWidth: .infinity, alignment: .leading)
+//                .padding()
+//
+//
+//            ScrollView {
+//                if cartManager.numberOfItems > 0 {
+//                    ForEach(Array(cartManager.order.keys), id: \.self) { restaurantName in
+//
+//                        let restaurant = Restaurant.all.filter { $0.name == restaurantName }[0]
+//
+//                        RestaurantInCart(restaurant: restaurant)
+//                    }
+//
+//                }
+//                else {
+//                    EmptyCart()
+//                }
+//            }
+//
+//            Spacer()
+//
+//            BottomNavBar()
+//        }
+//    }
+    
+    
+    
+    
+    // Official version
     var body: some View {
         VStack {
-            ScrollView {
-                Text("My Order")
-                    .font(.title)
-                    .bold()
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding()
-                
-                if cartManager.numberOfItems > 0 {
-                    ForEach(Array(cartManager.order.keys), id: \.self) { restaurantName in
+            Text("My Order")
+                .font(.title)
+                .bold()
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
 
-                        let restaurant = Restaurant.all.filter { $0.name == restaurantName }[0]
-                        
-                        RestaurantInCart(restaurant: restaurant)
-                    }
+            if cartManager.numberOfItems > 0 {
+                List {
+                    listRestaurant(for: Array(cartManager.order.keys))
                 }
-                else {
-                    EmptyCart()
-                }
+                .listStyle(PlainListStyle())
             }
-            .padding(.top)
-            
+            else {
+                EmptyCart()
+            }
+
+            Spacer()
+
             BottomNavBar()
         }
     }
+
+
+    private func listRestaurant(for restaurantNames: [String]) -> some View {
+        ForEach(restaurantNames, id: \.self) { restaurantName in
+            let restaurant = Restaurant.all.filter { $0.name == restaurantName }[0]
+
+            RestaurantInCart(restaurant: restaurant)
+        }
+        .onDelete { indexSet in
+            let key = restaurantNames[indexSet.first!]
+            cartManager.order.removeValue(forKey: key)
+        }
+        .listRowInsets(EdgeInsets())
+        .listRowSeparator(.hidden)
+    }
+    
+    
+    
+    /**
+    // Unofficial version 2: Not using list
+     var body: some View {
+         VStack {
+             Text("My Order")
+                 .font(.title)
+                 .bold()
+                 .frame(maxWidth: .infinity, alignment: .leading)
+                 .padding()
+             
+             
+             ScrollView {
+                 if cartManager.numberOfItems > 0 {
+//                     ForEach(Array(cartManager.order.keys), id: \.self) { restaurantName in
+//
+//                         let restaurant = Restaurant.all.filter { $0.name == restaurantName }[0]
+//
+//                         RestaurantInCart(restaurant: restaurant)
+//                     }
+                     
+                 }
+                 else {
+                     EmptyCart()
+                 }
+             }
+             
+             Spacer()
+             
+             BottomNavBar()
+         }
+     }
+   
+//    private func listRestaurant(restaurants: [(key: String, value: [Dish : Int])]) -> some View {
+//        for index in 0...restaurants.count-1 {
+//            let restaurantName = restaurants[index].key
+//            let restaurant = Restaurant.all.filter { $0.name == restaurantName }[0]
+//
+//                 RestaurantInCart(restaurant: restaurant)
+//        }
+//    }
+    
+    */
+    
 }
 
 
