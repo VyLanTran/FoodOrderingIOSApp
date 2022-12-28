@@ -9,9 +9,11 @@ import SwiftUI
 
 struct OrderDetails: View {
     
+    @State var showSheet: Bool = false
+    @EnvironmentObject var cartManager: CartManager
     var restaurant: Restaurant
     var dishes: [Dish: Int]
-    @State var showSheet: Bool = false
+    
     
     func computeSubtotal()  -> Double {
         var subtotal = 0.0
@@ -19,7 +21,6 @@ struct OrderDetails: View {
         for dish in dishes.keys {
             subtotal += dish.price * Double(dishes[dish]!)
         }
-
         return subtotal
     }
     
@@ -35,69 +36,81 @@ struct OrderDetails: View {
                 .frame(height: 2)
                 .overlay(Color(hue: 0, saturation: 0, brightness: 0.83))
             
-            ScrollView {
-                // Information for each dish in the cart
-                ForEach(Array(dishes.keys)) { dish in
-                    ItemRow(dish: dish, quantity: dishes[dish]!)
-                }
-                
-                // Subtotal
-                HStack {
-                    Text("Subtotal")
-                        .font(.system(size: 22))
-                        .bold()
-                    Spacer()
-                    
-                    let subtotal = computeSubtotal()
-                    Text("$\(subtotal, specifier: "%.2f")")
-                        .font(.system(size: 20))
-                        .bold()
-                }
-                .padding()
+            
+            List {
+                listItems(for: Array(dishes.keys))
             }
+            .listStyle(PlainListStyle())
             
-            Divider()
-                .frame(height: 2)
-                .overlay(Color(hue: 0, saturation: 0, brightness: 0.83))
-                .padding([.bottom])
             
-                        
-            // Buttons to Checkout and Add items
-            VStack(spacing: 30) {
-                // Checkout button
-                Button {
-                    print("kdjf")
-                } label: {
-                    Text("Go to checkout")
-                        .font(.system(size: 22))
-                        .bold()
-                        .foregroundColor(.white)
-                        .background(
-                            Rectangle()
-                                .fill(.black)
-                                .frame(width: 350 , height: 50)
-                        )
-                }
+            // Subtotal
+            HStack {
+                Text("Subtotal")
+                    .font(.system(size: 22))
+                    .bold()
+                Spacer()
                 
-                // Add items button
-                Button {
-                    showSheet.toggle()
-                } label: {
-                    Text("Add items")
-                        .font(.system(size: 22))
-                        .bold()
-                        .foregroundColor(.black)
-                        .background(
-                            Rectangle()
-                                .fill(Color(hue: 0, saturation: 0, brightness: 0.87))
-                                .frame(width: 350 , height: 50)
-                        )
-                }
-                .sheet(isPresented: $showSheet) {
-                    RestaurantMenu(restaurant: restaurant)
-                }
+                let subtotal = computeSubtotal()
+                Text("$\(subtotal, specifier: "%.2f")")
+                    .font(.system(size: 20))
+                    .bold()
+            }
+            .padding()
+        }
+            
+        Divider()
+            .frame(height: 2)
+            .overlay(Color(hue: 0, saturation: 0, brightness: 0.83))
+            .padding([.bottom])
+        
+                    
+        // Buttons to Checkout and Add items
+        VStack(spacing: 30) {
+            // Checkout button
+            Button {
+                print("kdjf")
+            } label: {
+                Text("Go to checkout")
+                    .font(.system(size: 22))
+                    .bold()
+                    .foregroundColor(.white)
+                    .background(
+                        Rectangle()
+                            .fill(.black)
+                            .frame(width: 350 , height: 50)
+                    )
+            }
+                
+            // Add items button
+            Button {
+                showSheet.toggle()
+            } label: {
+                Text("Add items")
+                    .font(.system(size: 22))
+                    .bold()
+                    .foregroundColor(.black)
+                    .background(
+                        Rectangle()
+                            .fill(Color(hue: 0, saturation: 0, brightness: 0.87))
+                            .frame(width: 350 , height: 50)
+                    )
+            }
+            .sheet(isPresented: $showSheet) {
+                RestaurantMenu(restaurant: restaurant)
             }
         }
+    }
+    
+    private func listItems(for listDishes: [Dish]) -> some View {
+        ForEach(listDishes, id: \.self) { dish in
+            ItemRow(dish: dish, quantity: dishes[dish]!)
+        }
+        .onDelete { indexSet in
+            let key = listDishes[indexSet.first!]
+            cartManager.order[restaurant.name]!.removeValue(forKey: key)
+        }
+        .listRowInsets(EdgeInsets())
+        .listRowSeparator(.hidden)
     }
 }
 

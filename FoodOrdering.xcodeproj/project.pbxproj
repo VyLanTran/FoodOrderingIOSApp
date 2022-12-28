@@ -130,8 +130,8 @@
 		C8FF411B292BD6E10023B29F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C837750A29296CCD0000877A /* ContentView.swift */,
 				C837751629296D090000877A /* HomeScreen.swift */,
+				C837750A29296CCD0000877A /* ContentView.swift */,
 				C8FF4125292C3F830023B29F /* RestaurantsView.swift */,
 				C8FF4127292C865A0023B29F /* RestaurantList.swift */,
 				C8FF4135292D4B370023B29F /* RestaurantMenu.swift */,
