@@ -10,25 +10,32 @@ import SwiftUI
 struct RestaurantMenu: View {
     
     var restaurant: Restaurant
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
-        VStack {
-            Text(restaurant.name)
-                .font(.system(size: 26))
-                .bold()
-            
-            ScrollView {
-                VStack {
-                    ForEach(restaurant.menu, id: \.id) { dish in
-                        DishCard(dish: dish)
-                    }
-                    
-                    Divider()
+        ScrollView {
+            VStack {
+                ForEach(restaurant.menu, id: \.id) { dish in
+                    DishCard(dish: dish)
                 }
+                
+                Divider()
             }
-            .padding(.vertical)
-            
-            BottomNavBar()
+        }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: backButton)
+        .navigationBarTitle(Text(restaurant.name), displayMode: .inline)
+        
+        BottomNavBar()
+    }
+    
+    var backButton: some View {
+        Button {
+            self.presentationMode.wrappedValue.dismiss()
+        } label: {
+            Image(systemName: "chevron.left")
+                .foregroundColor(.black)
+                .bold()
         }
     }
 }

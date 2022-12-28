@@ -8,24 +8,33 @@
 import SwiftUI
 
 struct RestaurantsView: View {
-    var restaurantCategory: RestaurantCategory
     
-    // List of restaurants with a specific ethnic category
+    var restaurantCategory: RestaurantCategory
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
+    // List of restaurants in a specific ethnic category
     var restaurants: [Restaurant] {
         return Restaurant.all.filter{ $0.category == restaurantCategory.rawValue }
     }
     
     var body: some View {
         VStack() {
-            VStack {
-                Text(restaurantCategory.rawValue)
-            }
-            .frame(height: 0)
-            
             RestaurantList(restaurants: restaurants)
-//                .navigationTitle(Text(restaurantCategory.rawValue))
+                .navigationBarTitle(Text(restaurantCategory.rawValue + " Food"), displayMode: .inline)
             
             BottomNavBar()
+        }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: backButton)
+    }
+    
+    var backButton: some View {
+        Button {
+            self.presentationMode.wrappedValue.dismiss()
+        } label: {
+            Image(systemName: "chevron.left")
+                .foregroundColor(.black)
+                .bold()
         }
     }
 }

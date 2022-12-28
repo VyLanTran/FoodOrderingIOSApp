@@ -28,6 +28,7 @@ struct RestaurantCard: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text(restaurant.name)
                     .fontWeight(.semibold)
+                    .foregroundColor(.black)
                 
                 HStack(spacing: 2) {
                     ForEach(0 ..< Int(restaurant.rating)) { i in
@@ -39,6 +40,7 @@ struct RestaurantCard: View {
                 
                 Text(restaurant.address)
                     .font(.system(size: 12))
+                    .foregroundColor(.black)
             }
             .frame(width: 160, height: 120)
             .multilineTextAlignment(.leading)

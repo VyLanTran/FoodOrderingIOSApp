@@ -21,11 +21,10 @@ struct RestaurantList: View {
                     } label: {
                         RestaurantCard(restaurant: restaurant)
                     }
-                    .navigationBarTitle("")
                 }
             }
+            .padding(.top)
         }
-        .padding(.vertical)
     }
 }
 

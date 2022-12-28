@@ -21,12 +21,13 @@ struct CategoryCard: View {
 
             Text(category)
                 .fontWeight(.semibold)
+                .foregroundColor(.black)
         }
     }
 }
 
 struct CategoryCard_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryCard(category: "Thai", image: Image("Thai"))
+        CategoryCard(category: "Thai", image: Image("Mexican"))
     }
 }
