@@ -11,6 +11,7 @@ struct OrderDetails: View {
     
     @State var showSheet: Bool = false
     @EnvironmentObject var cartManager: CartManager
+    @Environment(\.presentationMode) var presentationMode
     var restaurant: Restaurant
     var dishes: [Dish: Int]
     
@@ -96,7 +97,30 @@ struct OrderDetails: View {
                     )
             }
             .sheet(isPresented: $showSheet) {
-                RestaurantMenu(restaurant: restaurant)
+                // Shortened view of the RestaurantMenu
+                ScrollView {
+                    ZStack(alignment: .topLeading) {
+                        VStack {
+                            ForEach(restaurant.menu, id: \.id) { dish in
+                                DishCard(dish: dish)
+                            }
+                            
+                            Divider()
+                        }
+                        
+                        // Close button
+                        Button {
+                            presentationMode.wrappedValue.dismiss()
+                        } label: {
+                            Image(systemName: "xmark")
+                                .padding(12)
+                                .foregroundColor(.black)
+                                .background(Color(hue: 0, saturation: 0, brightness: 0.878))
+                                .cornerRadius(50)
+                        }
+                        .padding(10)
+                    }
+                }
             }
         }
     }

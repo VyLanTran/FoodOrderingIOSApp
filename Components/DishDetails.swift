@@ -36,7 +36,7 @@ struct DishDetails: View {
                     Image(systemName: "xmark")
                         .padding(12)
                         .foregroundColor(.black)
-                        .background(.white)
+                        .background(Color(hue: 0, saturation: 0, brightness: 0.878))
                         .cornerRadius(50)
                 }
                 .padding(10)
