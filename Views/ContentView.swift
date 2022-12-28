@@ -17,7 +17,8 @@ struct ContentView: View {
             HomeScreen()
         case .cartView:
             CartView()
-
+        case .browseView:
+            BrowseView()
         }
     }
 }

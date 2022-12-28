@@ -16,13 +16,19 @@ struct BottomNavBar: View {
             HStack(spacing: 25) {
                 BottomNavBarItem(id: 1, image: Image(systemName: "house.fill"), text: "Home", page: .homeScreen, selectedId: $selectedId)
                 
-                BottomNavBarItem(id: 2, image: Image(systemName: "clock.arrow.circlepath"), text: "History", page: .homeScreen, selectedId: $selectedId)
-              
+                BottomNavBarItem(id: 2, image: Image(systemName: "magnifyingglass"), text: "Browse", page: .browseView, selectedId: $selectedId)
+                
                 CartLabel(selectedId: $selectedId)
                 
-                BottomNavBarItem(id: 4, image: Image(systemName: "bell"), text: "Notifications", page: .homeScreen, selectedId: $selectedId)
+                BottomNavBarItem(id: 4, image: Image(systemName: "person.fill"), text: "Account", page: .homeScreen, selectedId: $selectedId)
                 
-                BottomNavBarItem(id: 5, image: Image(systemName: "person.fill"), text: "Account", page: .homeScreen, selectedId: $selectedId)
+//                BottomNavBarItem(id: 2, image: Image(systemName: "clock.arrow.circlepath"), text: "History", page: .homeScreen, selectedId: $selectedId)
+              
+                
+                
+//                BottomNavBarItem(id: 4, image: Image(systemName: "bell"), text: "Notifications", page: .homeScreen, selectedId: $selectedId)
+                
+                
                 
             }
             .frame(maxWidth: .infinity, alignment: .bottom)

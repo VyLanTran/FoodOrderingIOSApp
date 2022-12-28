@@ -28,6 +28,6 @@ struct CategoryCard: View {
 
 struct CategoryCard_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryCard(category: "Thai", image: Image("Mexican"))
+        CategoryCard(category: "Mexican", image: Image("Mexican"))
     }
 }

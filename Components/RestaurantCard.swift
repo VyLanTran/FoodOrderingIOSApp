@@ -8,7 +8,14 @@
 import SwiftUI
 
 struct RestaurantCard: View {
+    
     var restaurant: Restaurant
+    var width: CGFloat
+    
+    init(restaurant: Restaurant, width: CGFloat = 160) {
+        self.restaurant = restaurant
+        self.width = width
+    }
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -21,7 +28,7 @@ struct RestaurantCard: View {
                     Image(systemName: "photo")
                 }
             )
-            .frame(width: 160, height: 140)
+            .frame(width: width, height: 140)
             .cornerRadius(6)
             .shadow(radius: 4)
             
@@ -30,19 +37,20 @@ struct RestaurantCard: View {
                     .fontWeight(.semibold)
                     .foregroundColor(.black)
                 
-                HStack(spacing: 2) {
-                    ForEach(0 ..< Int(restaurant.rating)) { i in
-                        Image(systemName: "star.fill")
-                            .foregroundColor(.yellow)
-                            .font(.system(size: 12))
-                    }
+                HStack(spacing: 5) {
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.yellow)
+                        .font(.system(size: 12))
+                    Text("\(restaurant.rating, specifier: "%.1f")")
+                        .font(.system(size: 14))
+                        .foregroundColor(.black)
                 }
                 
                 Text(restaurant.address)
                     .font(.system(size: 12))
                     .foregroundColor(.black)
             }
-            .frame(width: 160, height: 120)
+            .frame(width: width, height: 120)
             .multilineTextAlignment(.leading)
         }
     }

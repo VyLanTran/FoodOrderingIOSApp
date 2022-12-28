@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeScreen: View {
     
     @State var selection: String = "Restaurant"
-    private let filterOptions = ["Restaurant", "Dishes", "Price", "Nearby", "Time"]
+    private let filterOptions = ["Restaurant", "Dish", "Price", "Nearby", "Time"]
 
     var body: some View {
         NavigationView {
@@ -21,20 +21,95 @@ struct HomeScreen: View {
                 }
                 
                 // Selected filters
-                ScrollView (.horizontal) {
-                    HStack {
-                        ForEach(0 ..< filterOptions.count) { i in
-                            FilterSelectedView(isSelected: true, text: filterOptions[i])
-                        }
-                    }
-                    .padding()
-                }
+//                ScrollView (.horizontal) {
+//                    HStack {
+//                        ForEach(0 ..< filterOptions.count) { i in
+//                            FilterSelectedView(isSelected: true, text: filterOptions[i])
+//                        }
+//                    }
+//                    .padding()
+//                }
                 
                 OptionsView(selection: $selection)
+                    .padding(.vertical)
                 
                 if (selection == "Restaurant") {
-                    RestaurantCategories()
-                        .padding(.vertical)
+                    ScrollView {
+                        VStack(spacing: 30) {
+                            // Ethnic restaurants
+                            RestaurantCategories()
+                                .padding(.vertical)
+                            
+                            // Popular restaurants
+                            VStack {
+                                HStack {
+                                    Text("Most Popular")
+                                        .font(.system(size: 22))
+                                        .bold()
+                                        .padding()
+                                    Spacer()
+                                }
+                                
+                                ScrollView(.horizontal, showsIndicators: false) {
+                                    HStack(spacing: 30) {
+                                        let popularRestaurants = Restaurant.all.filter({ $0.isPopular })
+                                        ForEach(popularRestaurants, id: \.self) { restaurant in
+                                            NavigationLink {
+                                                RestaurantMenu(restaurant: restaurant)
+                                            } label: {
+                                                RestaurantCard(restaurant: restaurant, width: 235)
+                                            }
+                                        }
+                                    }
+                                    .padding(.leading)
+                                }
+                            }
+                            
+                            // Highest rating restaurants
+                            VStack {
+                                HStack {
+                                    Text("Highest ratings")
+                                        .font(.system(size: 22))
+                                        .bold()
+                                        .padding()
+                                    Spacer()
+                                }
+                                
+                                ScrollView(.horizontal, showsIndicators: false) {
+                                    HStack(spacing: 30) {
+                                        let highestRatings = Restaurant.all.filter({ $0.rating >= 4.0 }).sorted(by: { $0.rating > $1.rating })
+                                        
+                                        ForEach(highestRatings, id: \.self) { restaurant in
+                                            NavigationLink {
+                                                RestaurantMenu(restaurant: restaurant)
+                                            } label: {
+                                                RestaurantCard(restaurant: restaurant, width: 235)
+                                            }
+                                        }
+                                    }
+                                    .padding(.leading)
+                                }
+                            }
+                        }
+                        /**
+                        ScrollView (.horizontal, showsIndicators: false) {
+                            HStack {
+                                ForEach(0 ..< 5) { index in
+                                    NavigationLink {
+                                        DetailScreen()
+                                    } label: {
+                                        ProductCardView(image: Image("chair_\(index + 1)"), size: 210)
+                                    }
+                                    .navigationBarHidden(true)
+                                    .foregroundColor(.black)
+
+                                }
+                                .padding(.trailing)
+                            }
+                            .padding(.leading)
+                        }
+                         */
+                    }
                 }
                 
                 Spacer()
@@ -101,39 +176,39 @@ struct SearchView: View {
     }
 }
 
-struct FilterSelectedView: View {
-    let isSelected: Bool
-    let text: String
-    
-    var body: some View {
-        ZStack {
-            Rectangle()
-                .fill(Color(.darkGray))
-                .frame(height: 40)
-                .cornerRadius(14.0)
-
-            HStack {
-                Text(text)
-                    .foregroundColor(.white)
-                    .font(.system(size: 12))
-                    .fontWeight(.semibold)
-                Button(action: {}) {
-                    Image(systemName: "xmark")
-                        .foregroundColor(.white)
-                        .font(.system(size: 9))
-                    .fontWeight(.semibold)
-                }
-            }
-            .padding()
-        }
-    }
-}
+//struct FilterSelectedView: View {
+//    let isSelected: Bool
+//    let text: String
+//
+//    var body: some View {
+//        ZStack {
+//            Rectangle()
+//                .fill(Color(.darkGray))
+//                .frame(height: 40)
+//                .cornerRadius(14.0)
+//
+//            HStack {
+//                Text(text)
+//                    .foregroundColor(.white)
+//                    .font(.system(size: 12))
+//                    .fontWeight(.semibold)
+//                Button(action: {}) {
+//                    Image(systemName: "xmark")
+//                        .foregroundColor(.white)
+//                        .font(.system(size: 9))
+//                    .fontWeight(.semibold)
+//                }
+//            }
+//            .padding()
+//        }
+//    }
+//}
 
 struct OptionsView: View {
     
     @State private var selectedIndex: Int = 0
     @Binding var selection: String
-    private let options = ["Restaurant", "Dishes", "Price", "Nearby", "Time"]
+    private let options = ["Restaurant", "Dishes", "Price"]
     
     var body: some View {
         ScrollView (.horizontal, showsIndicators: false) {
