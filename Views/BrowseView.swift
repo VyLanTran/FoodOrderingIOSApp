@@ -13,58 +13,49 @@ struct BrowseView: View {
     
     var body: some View {
         NavigationView {
-//            VStack {
-//                Text("Browse")
-//                    .bold()
-                
-                ScrollView {
-                    VStack(spacing: 30) {
-                        // Top categories
-                        VStack {
-                            HStack {
-                                Text("Top Categories")
-                                    .font(.system(size: 20))
-                                    .bold()
-                                    .padding()
-                                Spacer()
-                            }
-                            HStack(spacing: 15) {
-                                CategoryCard2(category: "Mexican", image: Image("Mexican"))
-                                CategoryCard2(category: "Italian", image: Image("Italian"))
-                            }
-                            .padding(.horizontal)
+            
+            ScrollView {
+                VStack(spacing: 30) {
+                    // Top categories
+                    VStack {
+                        HStack {
+                            Text("Top Categories")
+                                .font(.system(size: 20))
+                                .bold()
+                                .padding()
+                            Spacer()
+                        }
+                        HStack(spacing: 15) {
+                            CategoryCard2(category: "Mexican", image: Image("Mexican"))
+                            CategoryCard2(category: "Italian", image: Image("Italian"))
+                        }
+                        .padding(.horizontal)
+                    }
+                    
+                    // All categories
+                    VStack {
+                        HStack {
+                            Text("All Categories")
+                                .font(.system(size: 20))
+                                .bold()
+                                .padding()
+                            Spacer()
                         }
                         
-                        // All categories
-                        VStack {
-                            HStack {
-                                Text("All Categories")
-                                    .font(.system(size: 20))
-                                    .bold()
-                                    .padding()
-                                Spacer()
-                            }
-                            
-                            LazyVGrid(columns: columns, spacing: 20) {
-                                ForEach(RestaurantCategory.allCases, id: \.id) { category in
-                                    NavigationLink {
-                                        RestaurantsView(restaurantCategory: category)
-                                    } label: {
-                                        CategoryCard2(category: category.rawValue, image: Image("\(category.rawValue)"))
-                                    }
+                        LazyVGrid(columns: columns, spacing: 20) {
+                            ForEach(RestaurantCategory.allCases, id: \.id) { category in
+                                NavigationLink {
+                                    RestaurantsView(restaurantCategory: category)
+                                } label: {
+                                    CategoryCard2(category: category.rawValue, image: Image("\(category.rawValue)"))
                                 }
                             }
-                            .padding([.leading, .trailing])
                         }
+                        .padding([.leading, .trailing])
                     }
                 }
-                .navigationBarTitle("Restaurant Categories", displayMode: .inline)
-                
-//                Spacer()
-//
-//                BottomNavBar()
-//                    .padding(.top)
-//            }
+            }
+            .navigationBarTitle("Restaurant Categories", displayMode: .inline)
         }
     }
 }

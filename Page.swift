@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum Page {
-    case homeScreen
-    case browseView
-    case cartView
-}
+//enum Page {
+//    case homeScreen
+//    case browseView
+//    case cartView
+//}

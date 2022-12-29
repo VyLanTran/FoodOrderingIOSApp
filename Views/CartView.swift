@@ -32,7 +32,6 @@ struct CartView: View {
             }
 
             Spacer()
-//            BottomNavBar()
         }
     }
 
@@ -57,7 +56,6 @@ struct CartView: View {
 struct EmptyCart: View {
     
     @Binding var selectedTab: Tag
-//    @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
         VStack(spacing: 40) {
@@ -71,7 +69,6 @@ struct EmptyCart: View {
             
             // "Start Ordering" button
             Button {
-//                viewRouter.currentPage = .homeScreen
                 self.selectedTab = Tag.homeScreen
             } label: {
                 Text("Start Ordering")
@@ -81,7 +78,6 @@ struct EmptyCart: View {
                     .background(.black)
                     .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
             }
-
         }
     }
 }

@@ -25,8 +25,6 @@ struct RestaurantMenu: View {
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: BackButton())
         .navigationBarTitle(Text(restaurant.name), displayMode: .inline)
-        
-//        BottomNavBar()
     }
 }
 

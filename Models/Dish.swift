@@ -29,8 +29,6 @@ struct Dish: Identifiable, Hashable {
     var isPopular: Bool
     var isNew: Bool
     
-//    let extra: String
-    
     init(name: String, image: String, price: Double, description: String = "", restaurant: String, category: Category.RawValue, isPopular: Bool = false, isNew: Bool = false) {
         self.name = name
         self.image = image

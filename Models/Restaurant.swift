@@ -34,7 +34,6 @@ struct Restaurant: Identifiable, Hashable {
     var menu: [Dish]
     var isPopular: Bool
     //    var isOpen: Bool
-    //    var openHours: String
     
     init(category: RestaurantCategory.RawValue, name: String, image: String, rating: Double, address: String, menu: [Dish],  isPopular: Bool = false) {
         self.category = category

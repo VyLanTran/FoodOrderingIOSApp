@@ -181,10 +181,3 @@ struct ItemRow: View {
         }
     }
 }
-
-//struct OrderDetails_Previews: PreviewProvider {
-//    static var previews: some View {
-//        OrderDetails(restaurant: Restaurant.all[0], dishes: [Dish.all[0]:2, Dish.all[3]:1, Dish.all[4]:4])
-////        ItemRow(dish: Dish.all[0], quantity: 3)
-//    }
-//}

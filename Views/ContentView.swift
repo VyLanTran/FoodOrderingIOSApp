@@ -17,18 +17,8 @@ struct ContentView: View {
     
     @EnvironmentObject var cartManager: CartManager
     @State var selectedTab = Tag.homeScreen
-//    @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
-//        switch viewRouter.currentPage {
-//        case .homeScreen:
-//            HomeScreen()
-//        case .cartView:
-//            CartView()
-//        case .browseView:
-//            BrowseView()
-//        }
-        
         
         TabView(selection: $selectedTab) {
             HomeScreen()
@@ -59,7 +49,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-//            .environmentObject(ViewRouter())
             .environmentObject(CartManager())
     }
 }

@@ -15,7 +15,6 @@
 		C8377526292A25580000877A /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8377525292A25580000877A /* Dish.swift */; };
 		C8377528292A2A890000877A /* RestaurantCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8377527292A2A890000877A /* RestaurantCategories.swift */; };
 		C862898029304AAD0027245C /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = C862897F29304AAD0027245C /* Page.swift */; };
-		C862898229304B1F0027245C /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C862898129304B1F0027245C /* ViewRouter.swift */; };
 		C8BCCF33295C8645008496F6 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BCCF32295C8645008496F6 /* BrowseView.swift */; };
 		C8BCCF35295C8C98008496F6 /* CategoryCard2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BCCF34295C8C98008496F6 /* CategoryCard2.swift */; };
 		C8BCCF39295D05DB008496F6 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BCCF38295D05DB008496F6 /* BackButton.swift */; };
@@ -32,7 +31,6 @@
 		C8FF4132292D38810023B29F /* CategoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FF4131292D38810023B29F /* CategoryCard.swift */; };
 		C8FF4134292D392D0023B29F /* DishCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FF4133292D392D0023B29F /* DishCard.swift */; };
 		C8FF4136292D4B370023B29F /* RestaurantMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FF4135292D4B370023B29F /* RestaurantMenu.swift */; };
-		C8FF413A292DDFF20023B29F /* BottomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FF4139292DDFF20023B29F /* BottomNavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +43,6 @@
 		C8377525292A25580000877A /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		C8377527292A2A890000877A /* RestaurantCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCategories.swift; sourceTree = "<group>"; };
 		C862897F29304AAD0027245C /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
-		C862898129304B1F0027245C /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		C8BCCF32295C8645008496F6 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		C8BCCF34295C8C98008496F6 /* CategoryCard2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCard2.swift; sourceTree = "<group>"; };
 		C8BCCF38295D05DB008496F6 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
@@ -62,7 +59,6 @@
 		C8FF4131292D38810023B29F /* CategoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCard.swift; sourceTree = "<group>"; };
 		C8FF4133292D392D0023B29F /* DishCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCard.swift; sourceTree = "<group>"; };
 		C8FF4135292D4B370023B29F /* RestaurantMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenu.swift; sourceTree = "<group>"; };
-		C8FF4139292DDFF20023B29F /* BottomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +82,6 @@
 				C8FF411A292BD6970023B29F /* Models */,
 				C862897F29304AAD0027245C /* Page.swift */,
 				C837750629296CCC0000877A /* Products */,
-				C862898129304B1F0027245C /* ViewRouter.swift */,
 				C8FF411B292BD6E10023B29F /* Views */,
 			);
 			sourceTree = "<group>";
@@ -136,7 +131,6 @@
 		C8FF411B292BD6E10023B29F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C8FF4139292DDFF20023B29F /* BottomNavBar.swift */,
 				C8BCCF32295C8645008496F6 /* BrowseView.swift */,
 				C8D3E8D2292EDB0000876E12 /* CartView.swift */,
 				C837750A29296CCD0000877A /* ContentView.swift */,
@@ -245,7 +239,6 @@
 				C8BCCF35295C8C98008496F6 /* CategoryCard2.swift in Sources */,
 				C8BCCF39295D05DB008496F6 /* BackButton.swift in Sources */,
 				C8FF4126292C3F830023B29F /* RestaurantsView.swift in Sources */,
-				C862898229304B1F0027245C /* ViewRouter.swift in Sources */,
 				C8D3E8CF292ED22B00876E12 /* CartManager.swift in Sources */,
 				C862898029304AAD0027245C /* Page.swift in Sources */,
 				C8377526292A25580000877A /* Dish.swift in Sources */,
@@ -257,7 +250,6 @@
 				C837751729296D090000877A /* HomeScreen.swift in Sources */,
 				C8BCCF33295C8645008496F6 /* BrowseView.swift in Sources */,
 				C8FF4136292D4B370023B29F /* RestaurantMenu.swift in Sources */,
-				C8FF413A292DDFF20023B29F /* BottomNavBar.swift in Sources */,
 				C8377528292A2A890000877A /* RestaurantCategories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

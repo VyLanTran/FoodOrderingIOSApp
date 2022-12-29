@@ -18,14 +18,10 @@ struct RestaurantsView: View {
     }
     
     var body: some View {
-//        VStack() {
-            RestaurantList(restaurants: restaurants)
-                .navigationBarTitle(Text(restaurantCategory.rawValue + " Food"), displayMode: .inline)
-            
-//            BottomNavBar()
-//        }
-        .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: BackButton())
+        RestaurantList(restaurants: restaurants)
+            .navigationBarTitle(Text(restaurantCategory.rawValue + " Food"), displayMode: .inline)
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading: BackButton())
     }
 }
 
