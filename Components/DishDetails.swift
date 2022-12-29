@@ -101,9 +101,8 @@ struct DishDetails: View {
             }
             .frame(height: 0)
             .padding()
-            
+            .padding(.bottom)
         }
-        
     }
 }
 

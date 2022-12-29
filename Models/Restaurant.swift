@@ -368,11 +368,11 @@ extension Restaurant {
         ),
         Restaurant(
             category: "Fast Food",
-            name: "Popeyes Chesnut",
+            name: "Popeyes",
             image: "https://d1ralsognjng37.cloudfront.net/47f86765-ddd1-463f-b4a2-f102fb472dcd.jpeg",
             rating: 4.5,
             address: "120 Chestnut Street",
-            menu: Dish.all.filter { $0.restaurant == "Popeyes Chesnut" }
+            menu: Dish.all.filter { $0.restaurant == "Popeyes" }
         ),
         
         // COFFEE AND TEA

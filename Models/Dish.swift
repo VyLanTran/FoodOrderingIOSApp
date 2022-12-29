@@ -877,8 +877,421 @@ extension Dish {
             description: "Stick Rice seasoned with coconut milk and sugar served with mango and coconut cream",
             restaurant: "Sticky Rice",
             category: "Dessert"
-        )
+        ),
 
+        
+        Dish(
+            name: "Caprese Baguette",
+            image: "https://boarshead.scdn5.secure.raxcdn.com/img/_content/recipe/202495097-caprese-baguette-sandwich/detail-001@400.1499261497.jpg",
+            price: 7.00,
+            description: "Mozzarella, Tomato, Arugula, Mixed Greens, Pesto, Balsamic Glaze, Baguette",
+            restaurant: "Paris Baguette",
+            category: "Main"
+        ),
+        Dish(
+            name: "Ham Egg Swiss Croissant",
+            image: "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_16:9/k%2Farchive%2Fb3218cfc33905defa99e62af055b76e171aa4ec1",
+            price: 9.20,
+            description: "Pork Ham, Egg, Parmesan Cheese, Swiss Cheese, Dijon Mayonnaise",
+            restaurant: "Paris Baguette",
+            category: "Main"
+        ),
+        Dish(
+            name: "Tiramisu Tart",
+            image: "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/czv3bcyoompr0g5xxmwa",
+            price: 8.70,
+            description: "Cream Cheese, chocolate Powder",
+            restaurant: "Paris Baguette",
+            category: "Main"
+        ),
+        Dish(
+            name: "Hot Coffee",
+            image: "https://www.misstamchiak.com/wp-content/uploads/2014/03/IMG_7954.jpg",
+            price: 6.00,
+            description: "Brewed coffee for when you need the perfect pick-me-up",
+            restaurant: "Paris Baguette",
+            category: "Drink"
+        ),
+        
+        
+        Dish(
+            name: "Big Steak Omelette",
+            image: "https://olo-images-live.imgix.net/d3/d34084c1dfb84390920f23487f7a6095.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=860&h=484&fit=fill&bg=%23fff&s=b5b1b4475750cae815c8a4b809378e1b",
+            price: 14.29,
+            restaurant: "IHOP",
+            category: "Main"
+        ),
+        Dish(
+            name: "Smokehouse Combo",
+            image: "https://olo-images-live.imgix.net/47/47039f2fc9be4653818c9a92cabed206.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=860&h=484&fit=fill&bg=%23fff&s=e8f5b76388d3db95adb155b74ae4075a",
+            price: 11.49,
+            restaurant: "IHOP",
+            category: "Main"
+        ),
+        Dish(
+            name: "House-made Milkshakes",
+            image: "https://olo-images-live.imgix.net/c9/c978ff42ffa4491d8a25b839679437c3.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=860&h=484&fit=fill&bg=%23fff&s=b8012c833c1a530880eb9263043646e4",
+            price: 5.99,
+            restaurant: "IHOP",
+            category: "Drink"
+        ),
+        
+        
+        Dish(
+            name: "Coop Sandwich",
+            image: "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/vc4b5an2w9aqixu4zbi7",
+            price: 9.00,
+            description: "Made with crunchy homemade slaw & house spread (Sriracha-mayo with sweet chili)",
+            restaurant: "Hatch & Coop",
+            category: "Main"
+        ),
+        Dish(
+            name: "Honey Sandwich",
+            image: "https://images.getbento.com/accounts/a40c3989028bde58d766b078e10facb3/media/vyn6zJoKSwWWKEhugAFL_Honey2%20copy.jpeg?w=1800&fit=max&auto=compress,format&h=1800",
+            price: 8.00,
+            description: "Simply topped with fresh caramelized honey",
+            restaurant: "Hatch & Coop",
+            category: "Main"
+        ),
+        
+        
+        Dish(
+            name: "Chick-fil-A Chicken Sandwich",
+            image: "https://www.cfacdn.com/img/order/menu/Online/Entrees/Jul19_CFASandwich_pdp.png",
+            price: 12.00,
+            description: "A boneless breast of chicken seasoned to perfection, freshly breaded, pressure cooked in 100% refined peanut oil and served on a toasted, buttered bun with dill pickle chips. Also available on a multigrain bun",
+            restaurant: "Chick-fil-A",
+            category: "Main"
+        ),
+        Dish(
+            name: "Chick-fil-A Grilled Chicken Club Sandwich",
+            image: "https://www.cfacdn.com/img/order/menu/Online/Entrees/grilledClub_colbyJack_PDP.png",
+            price: 12.00,
+            description: "A lemon-herb marinated boneless breast of chicken, grilled for a tender and juicy backyard-smokey taste, served on a toasted multigrain brioche bun with Colby Jack cheese, applewood smoked bacon, green leaf lettuce and tomato. Pairs well with Honey Roasted BBQ Sauce",
+            restaurant: "Chick-fil-A",
+            category: "Main"
+        ),
+        
+        
+        Dish(
+            name: "Pain au Chocolat",
+            image: "https://www.wendys.com/sites/default/files/styles/max_650x650/public/2021-05/2020_PHOTO_PainAuChocolate.png?itok=bdiJbmGG",
+            price: 7.25,
+            description: "Flaky croissant dough layered with delicious butter filled with a generous portion of warm chocolate",
+            restaurant: "Wendy's",
+            category: "Side"
+        ),
+        Dish(
+            name: "Dave's Triple Combo",
+            image: "https://www.wendys.com/sites/default/files/styles/max_650x650/public/2022-11/MicrosoftTeams-image%20%282%29_0.png?itok=KNYs02pH",
+            price: 17.25,
+            description: "Three quarters of a pound* of fresh British beef, American cheese, crisp lettuce, tomato, pickle, ketchup, mayo, and onion on a toasted bun. Use both hands!",
+            restaurant: "Wendy's",
+            category: "Main"
+        ),
+        
+        
+        Dish(
+            name: "Chicken McNuggets",
+            image: "https://s7d1.scene7.com/is/image/mcdonalds/DC_202006_0483_4McNuggets_Stacked_832x472:product-header-desktop?wid=830&hei=458&dpr=off",
+            price: 6.25,
+            restaurant: "McDonalds's",
+            category: "Side"
+        ),
+        Dish(
+            name: "Big Mac",
+            image: "https://s7d1.scene7.com/is/image/mcdonalds/DC_201907_0005_BigMac_832x472:product-header-desktop?wid=830&hei=458&dpr=off",
+            price: 10.45,
+            restaurant: "McDonalds's",
+            category: "Main"
+        ),
+        Dish(
+            name: "World Famous Fries",
+            image: "https://s7d1.scene7.com/is/image/mcdonalds/DC_202002_6050_SmallFrenchFries_Standing_832x472:product-header-desktop?wid=830&hei=456&dpr=off",
+            price: 5.75,
+            restaurant: "McDonalds's",
+            category: "Side"
+        ),
+        Dish(
+            name: "Deluxe Crispy Chicken Sandwich",
+            image: "https://s7d1.scene7.com/is/image/mcdonalds/DC_202012_0370_DeluxeCrispyChicken_PotatoBun_832x472:product-header-desktop?wid=830&hei=458&dpr=off",
+            price: 12.30,
+            restaurant: "McDonalds's",
+            category: "Main"
+        ),
+        
+        
+        Dish(
+            name: "8Pc Signature Chicken Box - Classic",
+            image: "https://cdn.sanity.io/images/czqk28jt/prod_plk_us/2b551a1d8ae685757b6605a08da90d8b9a92379b-2000x1333.png?w=750&q=40&fit=max&auto=format",
+            price: 20.10,
+            restaurant: "Popeyes",
+            category: "Main"
+        ),
+        Dish(
+            name: "Spicy Blackened Chicken Sandwich Combo",
+            image: "https://cdn.sanity.io/images/czqk28jt/prod_plk_us/8ae8e856eec863129f548abdc508c2079d0a50bf-2000x1333.png?w=750&q=40&fit=max&auto=format",
+            price: 13.10,
+            restaurant: "Popeyes",
+            category: "Main"
+        ),
+        Dish(
+            name: "10Pc Signature Chicken Bundle - Classic",
+            image: "https://cdn.sanity.io/images/czqk28jt/prod_plk_us/08aef3601ff97274eef4a11641c9cd77ee00e814-2000x1333.png?w=750&q=40&fit=max&auto=format",
+            price: 24.00,
+            restaurant: "Popeyes",
+            category: "Main"
+        ),
+        
+        
+        Dish(
+            name: "Pumpkin Spice Frappuccino Blended Beverage",
+            image: "https://globalassets.starbucks.com/assets/ea0badf8c4ba4dc6b3e64d112bda1e55.jpg?impolicy=1by1_wide_topcrop_630",
+            price: 7.25,
+            restaurant: "Starbucks",
+            category: "Drink"
+        ),
+        Dish(
+            name: "Peppermint Mocha Frappuccino® Blended Beverage",
+            image: "https://globalassets.starbucks.com/assets/5b8fe346d42a499ea1bbcc7579e755d7.jpg?impolicy=1by1_wide_topcrop_630",
+            price: 8.25,
+            restaurant: "Starbucks",
+            category: "Drink"
+        ),
+        Dish(
+            name: "Featured Starbucks® Dark Roast Coffee",
+            image: "https://globalassets.starbucks.com/assets/0279f9c5fa5941d2a65dd183d7a0b386.jpg?impolicy=1by1_wide_topcrop_630",
+            price: 6.35,
+            restaurant: "Starbucks",
+            category: "Drink"
+        ),
+        Dish(
+            name: "Butter Croissant",
+            image: "https://www.theflavorbender.com/wp-content/uploads/2020/05/French-Croissants-SM-2363.jpg",
+            price: 7.00,
+            restaurant: "Starbucks",
+            category: "Drink"
+        ),
+        
+        
+        Dish(
+            name: "Iced Coffee",
+            image: "https://www.dunkindonuts.com/content/dam/dd/img/menu-redesign-v2/570x570/iced-coffee.png",
+            price: 7.00,
+            restaurant: "Dunkin",
+            category: "Drink"
+        ),
+        Dish(
+            name: "Macchiato",
+            image: "https://www.dunkindonuts.com/content/dam/dd/img/menu-redesign-v2/570x570/hot-macchiato.png",
+            price: 7.20,
+            description: "Did someone say layers on layers of hand-crafted deliciousness? Made with creamy milk and topped with two shots of espresso, our Macchiato is just what you're looking for",
+            restaurant: "Dunkin",
+            category: "Drink"
+        ),
+        Dish(
+            name: "Cold Brew",
+            image: "https://www.dunkindonuts.com/content/dam/dd/img/menu-redesign-v2/570x570/cold-brew.png",
+            price: 6.50,
+            description: "100% Arabica beans steeped overnight in cold water for 12 hours to slowly extract the flavor, making it an ultra-smooth, full bodied cold coffee with a sweeter, rich chocolatey taste. Craft-brewed in small batches. Limited quantities available daily",
+            restaurant: "Dunkin",
+            category: "Drink"
+        ),
+        Dish(
+            name: "Donuts",
+            image: "https://www.dunkindonuts.com/content/dam/dd/img/menu-redesign/donuts/VanillaFrostedSprinklesDonut_570x570.png",
+            price: 7.20,
+            description: "Our delicious donuts come in a variety of flavors, so there’s a favorite for everyone",
+            restaurant: "Dunkin",
+            category: "Dessert"
+        ),
+        
+        
+        Dish(
+            name: "Oolong Tea",
+            image: "https://gongchausa.com/wp-content/uploads/2022/01/Milk-Foam-Oolong-Tea.png",
+            price: 6.50,
+            restaurant: "Gong Cha",
+            category: "Drink"
+        ),
+        Dish(
+            name: "Creme Brulee Sugar Milk Tea",
+            image: "https://gongchausa.com/wp-content/uploads/2022/01/Creme-Brulee-Brown-Sugar-Milk-Tea.png",
+            price: 7.50,
+            restaurant: "Gong Cha",
+            category: "Drink"
+        ),
+        
+        
+        Dish(
+            name: "Matcha Mousse Cake",
+            image: "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/cibwjhy9p4blv5u6zeir",
+            price: 8.50,
+            description: "A matcha flavored mousse with layers of matcha cake in between",
+            restaurant: "A La Mousse",
+            category: "Dessert"
+        ),
+        Dish(
+            name: "Tangerine Cheesescake",
+            image: "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/vabmwpgjjrns3lzpzgg0",
+            price: 9.50,
+            description: "Tangerine cheesecake,layers blood orange cream and tangerine pudding",
+            restaurant: "A La Mousse",
+            category: "Dessert"
+        ),
+        Dish(
+            name: "Mango Mousse Cake",
+            image: "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/r3k1n5iatytbvvkloycm",
+            price: 9.50,
+            description: "A sweet and delicate white chocolate spray covers a mango mousse, layer diced mango lime jam center",
+            restaurant: "A La Mousse",
+            category: "Dessert"
+        ),
+        Dish(
+            name: "Coffee Cream Cake",
+            image: "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/mblfp2naslrn8kgo7f3k",
+            price: 8.50,
+            description: "Coffee cream with layers of chocolate cake.(Gluten free)",
+            restaurant: "A La Mousse",
+            category: "Dessert"
+        ),
+        
+        
+        Dish(
+            name: "Margherita Pizza",
+            image: "https://www.acouplecooks.com/wp-content/uploads/2018/10/Margherita-Pizza-018.jpg",
+            price: 15.99,
+            description: "Tomato sauce, fresh mozzarella cheese topped with fresh basil",
+            restaurant: "Brooklyn Pizza",
+            category: "Main"
+        ),
+        Dish(
+            name: "Chicken Bacon Ranch Pizza",
+            image: "https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/cwjzqpsy/edb7a1c3-19ff-41de-ab31-1c6d40ce6983.jpg",
+            price: 14.99,
+            description: "Grilled chicken, bacon, topped with ranch & mozzarella cheese",
+            restaurant: "Brooklyn Pizza",
+            category: "Main"
+        ),
+        
+        
+        Dish(
+            name: "Pepperoni Pizza",
+            image: "https://www.papajohns.com/static-assets/a/images/web/product/cyo/Original-Crust-Pepperoni-105408.jpg",
+            price: 12.99,
+            description: "Your choice of crust covered with our signature pizza sauce, real cheese made from mozzarella, and pepperoni. With a pepperoni in almost every bite, it's one of our most popular pizzas",
+            restaurant: "Papa Johns",
+            category: "Main"
+        ),
+        Dish(
+            name: "Fresh Spinach & Tomato Alfredo Pizza",
+            image: "https://www.papajohns.com/static-assets/a/images/web/product/pizzas/fresh-spinach-tomato-compressed.jpg",
+            price: 14.89,
+            description: "Crafted with fresh cream and Parmesan and Romano cheeses, our 2-Cheese Alfredo sauce is deliciously creamy. We top it with fresh baby spinach, fresh-cut Roma tomatoes, real cheese made from mozzarella, plus classic Italian seasoning for an extra dash of flavor.",
+            restaurant: "Papa Johns",
+            category: "Main"
+        ),
+        Dish(
+            name: "Garden Fresh Pizza",
+            image: "https://www.papajohns.com/static-assets/a/images/web/product/pizzas/garden-fresh-slate-compressed.jpg",
+            price: 11.99,
+            description: "All your favorite veggies together on a delightfully delicious pizza. Loaded with crisp green peppers, fresh-cut onions, mushrooms, ripe black olives, vine-ripened Roma tomatoes, and real cheese made from mozzarella",
+            restaurant: "Papa Johns",
+            category: "Main"
+        ),
+        
+        
+        Dish(
+            name: "New G",
+            image: "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/lfgsasinrx7grh6kd05h",
+            price: 11.59,
+            restaurant: "&pizza Rittenhouse",
+            category: "Main"
+        ),
+        Dish(
+            name: "CBR",
+            image: "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/rkhbu46poh5c9b02c9i3",
+            price: 12.49,
+            restaurant: "&pizza Rittenhouse",
+            category: "Main"
+        ),
+        Dish(
+            name: "Buffalo 66",
+            image: "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/l75opcpg2xysmxqu9g1m",
+            price: 11.59,
+            restaurant: "&pizza Rittenhouse",
+            category: "Main"
+        ),
+        
+        
+        Dish(
+            name: "The Chicken Roast",
+            image: "https://skinnyms.com/wp-content/uploads/2017/10/One-Pan-Roasted-Chicken-and-Veggie-8-Delish-e1610557163183.jpg",
+            price: 14.91,
+            description: "Herb chicken breast with chicken jus, chili crisp brussels sprouts, charred broccoli with lemon, and brown rice, with garlic aioli on the side",
+            restaurant: "DIG - Rittenhouse Square",
+            category: "Main"
+        ),
+        Dish(
+            name: "Avocado & Lentils",
+            image: "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_130,g_auto/a8jktrgqkoap7y9zdn75",
+            price: 12.25,
+            description: "Tomatoes & cucumbers, sheet tray carrots, avocado, quinoa & lentils, and farm greens with mint, with habanada dressing and candied sunflower seeds on the side",
+            restaurant: "DIG - Rittenhouse Square",
+            category: "Main"
+        ),
+        
+        
+        Dish(
+            name: "Garlic Butter Chicken",
+            image: "https://www.eatwell101.com/wp-content/uploads/2019/03/chicken-skillet-recipe-2.jpg",
+            price: 13.25,
+            description: "Freshly made egg white noodles, roasted chicken, snow peas, scallions, mushrooms, toasted sesame seeds, chili crisps and our garlic butter sauce",
+            restaurant: "Honeygrow",
+            category: "Main"
+        ),
+        Dish(
+            name: "Garlic Butter Shrimp",
+            image: "https://www.wholesomeyum.com/wp-content/uploads/2022/01/wholesomeyum-Lemon-Garlic-Butter-Shrimp-Recipe-19.jpg",
+            price: 13.25,
+            description: "Freshly made egg white noodles, roasted shrimp, snow peas, scallions, mushrooms, toasted sesame seeds, chili crisps, and our garlic butter sauce",
+            restaurant: "Honeygrow",
+            category: "Main"
+        ),
+        
+        
+        Dish(
+            name: "Truffle Parmesan Fries",
+            image: "https://say2eatfilestorage.blob.core.windows.net/dashboard-storage/9decbd72-e5b8-456f-8912-33d6d93d42b2%2F3WzjfBsoKafab37pjWAJNM.jpeg",
+            price: 10.00,
+            description: "Truffle, sharp parm, horseradish aioli",
+            restaurant: "Honeygrow",
+            category: "Side"
+        ),
+        Dish(
+            name: "The ARGENTO",
+            image: "https://say2eatfilestorage.blob.core.windows.net/dashboard-storage/9decbd72-e5b8-456f-8912-33d6d93d42b2%2Feccuz8ynmLDwBNQkDG7C8t.jpeg",
+            price: 19.00,
+            description: "Two fried cutlets, bandit mozzarella, prosciutto, basil mayo, roasted long hots, house alla vodka sauce, parmesan, toasted baguette",
+            restaurant: "Honeygrow",
+            category: "Main"
+        ),
+        
+        
+        Dish(
+            name: "Socal Burrito",
+            image: "https://images.squarespace-cdn.com/content/v1/5ffe3b980c26277106d7e4fa/7facc26a-99e4-426b-90c6-ade2ee0406de/Vegan+vs+Fries+SoCal+Burrito.jpg?format=1500w",
+            price: 14.00,
+            restaurant: "Vegan vs Fries",
+            category: "Main"
+        ),
+        Dish(
+            name: "Cali Crunch",
+            image: "https://images.squarespace-cdn.com/content/v1/5ffe3b980c26277106d7e4fa/75cb9a55-7c7e-4888-9136-918c7061f688/Screen+Shot+2021-11-17+at+2.02.44+PM.png?format=1500w",
+            price: 12.60,
+            restaurant: "Vegan vs Fries",
+            category: "Main"
+        )
     ]
 }
 
