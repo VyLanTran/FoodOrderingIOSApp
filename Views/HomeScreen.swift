@@ -11,7 +11,6 @@ struct HomeScreen: View {
     
     @EnvironmentObject var cartManager: CartManager
 //    @State var selection: String = "Restaurant"
-//    private let filterOptions = ["Restaurant", "Dish", "Price", "Nearby", "Time"]
 
     var body: some View {
         NavigationView {
