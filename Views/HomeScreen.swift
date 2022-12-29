@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeScreen: View {
     
+    @EnvironmentObject var cartManager: CartManager
     @State var selection: String = "Restaurant"
     private let filterOptions = ["Restaurant", "Dish", "Price", "Nearby", "Time"]
 
@@ -19,16 +20,6 @@ struct HomeScreen: View {
                     AppBarView()
                     SearchView()
                 }
-                
-                // Selected filters
-//                ScrollView (.horizontal) {
-//                    HStack {
-//                        ForEach(0 ..< filterOptions.count) { i in
-//                            FilterSelectedView(isSelected: true, text: filterOptions[i])
-//                        }
-//                    }
-//                    .padding()
-//                }
                 
                 OptionsView(selection: $selection)
                     .padding(.vertical)
@@ -91,34 +82,15 @@ struct HomeScreen: View {
                                 }
                             }
                         }
-                        /**
-                        ScrollView (.horizontal, showsIndicators: false) {
-                            HStack {
-                                ForEach(0 ..< 5) { index in
-                                    NavigationLink {
-                                        DetailScreen()
-                                    } label: {
-                                        ProductCardView(image: Image("chair_\(index + 1)"), size: 210)
-                                    }
-                                    .navigationBarHidden(true)
-                                    .foregroundColor(.black)
-
-                                }
-                                .padding(.trailing)
-                            }
-                            .padding(.leading)
-                        }
-                         */
                     }
                 }
                 
-                Spacer()
-
-                BottomNavBar()
-                    .padding(.top)
+//                Spacer()
+//
+//                BottomNavBar()
+//                    .padding(.top)
                 
             }
-//            .background(Color("background"))
         }
     }
 }
@@ -175,34 +147,6 @@ struct SearchView: View {
         .shadow(color: Color.black.opacity(0.15), radius: 8)
     }
 }
-
-//struct FilterSelectedView: View {
-//    let isSelected: Bool
-//    let text: String
-//
-//    var body: some View {
-//        ZStack {
-//            Rectangle()
-//                .fill(Color(.darkGray))
-//                .frame(height: 40)
-//                .cornerRadius(14.0)
-//
-//            HStack {
-//                Text(text)
-//                    .foregroundColor(.white)
-//                    .font(.system(size: 12))
-//                    .fontWeight(.semibold)
-//                Button(action: {}) {
-//                    Image(systemName: "xmark")
-//                        .foregroundColor(.white)
-//                        .font(.system(size: 9))
-//                    .fontWeight(.semibold)
-//                }
-//            }
-//            .padding()
-//        }
-//    }
-//}
 
 struct OptionsView: View {
     

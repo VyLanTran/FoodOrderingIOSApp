@@ -16,7 +16,7 @@ enum RestaurantCategory: String, CaseIterable, Identifiable {
     case italian = "Italian"
     case japanese = "Japanese"
     case thai = "Thai"
-    case breakfast = "Breakfast"
+    case breakfastAndBrunch = "Breakfast and Brunch"
     case fastFood = "Fast Food"
     case coffeeAndTea = "Coffee and Tea"
     case pizza = "Pizza"
@@ -310,7 +310,172 @@ extension Restaurant {
             rating: 3.9,
             address: "1951 E 3rd St, Williamsport, PA 17701",
             menu: Dish.all.filter { $0.restaurant == "Sticky Rice" }
+        ),
+        
+        // BREAKFAST
+        Restaurant(
+            category: "Breakfast and Brunch",
+            name: "Paris Baguette",
+            image: "https://d1ralsognjng37.cloudfront.net/7be804de-b778-4b33-acdc-af9e09b42f98.jpeg",
+            rating: 4.7,
+            address: "3816 Chesnut Street",
+            menu: Dish.all.filter { $0.restaurant == "Paris Baguette" }
+        ),
+        Restaurant(
+            category: "Breakfast and Brunch",
+            name: "IHOP",
+            image: "https://www.chewboom.com/wp-content/uploads/2020/06/IHOP-Introduces-New-Crepes-Cakes-Breakfast-678x381.jpg",
+            rating: 4.2,
+            address: "1320 Walnut Street",
+            menu: Dish.all.filter { $0.restaurant == "IHOP" }
+        ),
+        Restaurant(
+            category: "Breakfast and Brunch",
+            name: "Hatch & Coop",
+            image: "https://img.hoodline.com/uploads/story/image/99240/Hatch_&_Coop_Photo_2_Enhanced.jpg",
+            rating: 4.5,
+            address: "1320 Walnut Street",
+            menu: Dish.all.filter { $0.restaurant == "Hatch & Coop" }
+        ),
+        
+        
+        // FAST FOOD
+        Restaurant(
+            category: "Fast Food",
+            name: "Chick-fil-A",
+            image: "https://i.insider.com/568bf337dd0895b53c8b4751?width=750&format=jpeg&auto=webp",
+            rating: 4.5,
+            address: "2204 S Columbus Blvd",
+            menu: Dish.all.filter { $0.restaurant == "Chick-fil-A" },
+            isPopular: true
+        ),
+        Restaurant(
+            category: "Fast Food",
+            name: "Wendy's",
+            image: "https://tb-static.uber.com/prod/image-proc/processed_images/c63d052b73170f4d672bf961e731467a/3ac2b39ad528f8c8c5dc77c59abb683d.jpeg",
+            rating: 4.1,
+            address: "1515 Chestnut Street",
+            menu: Dish.all.filter { $0.restaurant == "Wendy's" },
+            isPopular: true
+        ),
+        Restaurant(
+            category: "Fast Food",
+            name: "McDonalds's",
+            image: "https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/1PUB_McDelivery_v4_1168x520.jpg",
+            rating: 4.2,
+            address: "Grays Ferry",
+            menu: Dish.all.filter { $0.restaurant == "McDonalds's" },
+            isPopular: true
+        ),
+        Restaurant(
+            category: "Fast Food",
+            name: "Popeyes Chesnut",
+            image: "https://d1ralsognjng37.cloudfront.net/47f86765-ddd1-463f-b4a2-f102fb472dcd.jpeg",
+            rating: 4.5,
+            address: "120 Chestnut Street",
+            menu: Dish.all.filter { $0.restaurant == "Popeyes Chesnut" }
+        ),
+        
+        // COFFEE AND TEA
+        Restaurant(
+            category: "Coffee and Tea",
+            name: "Starbucks",
+            image: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/4c710befa36d92ecfc97eb03cb8dbaa4",
+            rating: 4.7,
+            address: "16th & Walnut",
+            menu: Dish.all.filter { $0.restaurant == "Starbucks" },
+            isPopular: true
+        ),
+        Restaurant(
+            category: "Coffee and Tea",
+            name: "Dunkin'",
+            image: "https://d1ralsognjng37.cloudfront.net/f2211e35-5e6b-4f33-a351-470f644fc483.jpeg",
+            rating: 4.5,
+            address: "30th & Market Street Station",
+            menu: Dish.all.filter { $0.restaurant == "Dunkin'" },
+            isPopular: true
+        ),
+        Restaurant(
+            category: "Coffee and Tea",
+            name: "Gong Cha",
+            image: "https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=80/https://doordash-static.s3.amazonaws.com/media/store/header/1a81cd83-73f2-496e-ab80-ac9a876d9661.jpg",
+            rating: 4.3,
+            address: "917 Arch St.",
+            menu: Dish.all.filter { $0.restaurant == "Gong Cha" }
+        ),
+        Restaurant(
+            category: "Coffee and Tea",
+            name: "A La Mousse",
+            image: "https://duyt4h9nfnj50.cloudfront.net/resized/9e075563df92a6bf674a45ca051adb37-w2880-21.jpg",
+            rating: 4.9,
+            address: "86th & Walnut",
+            menu: Dish.all.filter { $0.restaurant == "A La Mousse" }
+        ),
+        
+        // PIZZA
+        Restaurant(
+            category: "Pizza",
+            name: "Brooklyn Pizza",
+            image: "https://restaurantclicks.com/wp-content/uploads/2021/09/brooklyn-style-pizza-grimaldis.jpg",
+            rating: 4.3,
+            address: "1625 Chesnut St",
+            menu: Dish.all.filter { $0.restaurant == "Brooklyn Pizza" },
+            isPopular: true
+        ),
+        Restaurant(
+            category: "Pizza",
+            name: "Papa Johns",
+            image: "https://www.papajohns.com/static-assets/a/images/web/product/pizzas/garden-fresh-slate-compressed.jpg",
+            rating: 4.5,
+            address: "Girard Ave",
+            menu: Dish.all.filter { $0.restaurant == "Papa Johns" },
+            isPopular: true
+        ),
+        Restaurant(
+            category: "Pizza",
+            name: "&pizza Rittenhouse",
+            image: "https://tb-static.uber.com/prod/image-proc/processed_images/e2d9438ba8edd40cc7458cb51dabf4d3/3ac2b39ad528f8c8c5dc77c59abb683d.jpeg",
+            rating: 4.8,
+            address: "213 S 15th St",
+            menu: Dish.all.filter { $0.restaurant == "&pizza Rittenhouse" },
+            isPopular: true
+        ),
+        
+        // HEALTHY
+        Restaurant(
+            category: "Healthy",
+            name: "DIG - Rittenhouse Square",
+            image: "https://d1ralsognjng37.cloudfront.net/787906c3-b043-421b-bf54-eff6d11bb663.jpeg",
+            rating: 4.6,
+            address: "120 Chesnut St",
+            menu: Dish.all.filter { $0.restaurant == "DIG - Rittenhouse Square" }
+        ),
+        Restaurant(
+            category: "Healthy",
+            name: "Honeygrow",
+            image: "https://images.getbento.com/accounts/4f414de3ec33336001dcb4ead38fcfb1/media/images/85935Spicy_Garlic.png?w=1800&fit=max&auto=compress,format&h=1800",
+            rating: 4.8,
+            address: "110S. 16th Street",
+            menu: Dish.all.filter { $0.restaurant == "Honeygrow" }
+        ),
+        
+        // VEGAN
+        Restaurant(
+            category: "Vegan",
+            name: "Monster Vegan",
+            image: "https://d1ralsognjng37.cloudfront.net/d1546c0b-5630-4200-9753-71314811f80c.jpeg",
+            rating: 4.6,
+            address: "1229 Spruce St",
+            menu: Dish.all.filter { $0.restaurant == "Monster Vegan" }
+        ),
+        Restaurant(
+            category: "Vegan",
+            name: "Vegan vs Fries",
+            image: "https://cdn.doordash.com/media/photosV2/770f91e7-6e32-4d23-8bb4-1cb692508fcb-retina-large.jpg",
+            rating: 4.4,
+            address: "1229 Walnut St",
+            menu: Dish.all.filter { $0.restaurant == "Vegan vs Fries" }
         )
     ]
 }
-    
+        

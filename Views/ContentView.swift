@@ -7,18 +7,51 @@
 
 import SwiftUI
 
+enum Tag {
+    case homeScreen
+    case browseView
+    case cartView
+}
+
 struct ContentView: View {
     
-    @EnvironmentObject var viewRouter: ViewRouter
+    @EnvironmentObject var cartManager: CartManager
+    @State var selectedTab = Tag.homeScreen
+//    @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
-        switch viewRouter.currentPage {
-        case .homeScreen:
+//        switch viewRouter.currentPage {
+//        case .homeScreen:
+//            HomeScreen()
+//        case .cartView:
+//            CartView()
+//        case .browseView:
+//            BrowseView()
+//        }
+        
+        
+        TabView(selection: $selectedTab) {
             HomeScreen()
-        case .cartView:
-            CartView()
-        case .browseView:
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("Home")
+                }
+                .tag(Tag.homeScreen)
+            
             BrowseView()
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Browse")
+                }
+                .tag(Tag.browseView)
+                    
+            CartView(selectedTab: $selectedTab)
+                .tabItem {
+                    Image(systemName: "cart.fill")
+                    Text("Cart")
+                }
+                .tag(Tag.cartView)
+                .badge(cartManager.getNumberOfItems())
         }
     }
 }
@@ -26,7 +59,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(ViewRouter())
+//            .environmentObject(ViewRouter())
             .environmentObject(CartManager())
     }
 }

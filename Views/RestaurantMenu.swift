@@ -23,20 +23,10 @@ struct RestaurantMenu: View {
             }
         }
         .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: backButton)
+        .navigationBarItems(leading: BackButton())
         .navigationBarTitle(Text(restaurant.name), displayMode: .inline)
         
-        BottomNavBar()
-    }
-    
-    var backButton: some View {
-        Button {
-            self.presentationMode.wrappedValue.dismiss()
-        } label: {
-            Image(systemName: "chevron.left")
-                .foregroundColor(.black)
-                .bold()
-        }
+//        BottomNavBar()
     }
 }
 

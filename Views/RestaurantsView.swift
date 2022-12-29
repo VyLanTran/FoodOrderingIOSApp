@@ -18,24 +18,14 @@ struct RestaurantsView: View {
     }
     
     var body: some View {
-        VStack() {
+//        VStack() {
             RestaurantList(restaurants: restaurants)
                 .navigationBarTitle(Text(restaurantCategory.rawValue + " Food"), displayMode: .inline)
             
-            BottomNavBar()
-        }
+//            BottomNavBar()
+//        }
         .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: backButton)
-    }
-    
-    var backButton: some View {
-        Button {
-            self.presentationMode.wrappedValue.dismiss()
-        } label: {
-            Image(systemName: "chevron.left")
-                .foregroundColor(.black)
-                .bold()
-        }
+        .navigationBarItems(leading: BackButton())
     }
 }
 

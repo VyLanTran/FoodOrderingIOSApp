@@ -14,7 +14,7 @@ struct OrderDetails: View {
     @Environment(\.presentationMode) var presentationMode
     var restaurant: Restaurant
     var dishes: [Dish: Int]
-    
+    @Binding var restaurantShowSheet: Bool
     
     func computeSubtotal()  -> Double {
         var subtotal = 0.0
@@ -132,6 +132,10 @@ struct OrderDetails: View {
         .onDelete { indexSet in
             let key = listDishes[indexSet.first!]
             cartManager.order[restaurant.name]!.removeValue(forKey: key)
+            if cartManager.order[restaurant.name]!.count == 0 {
+                cartManager.order[restaurant.name] = nil
+                restaurantShowSheet = false
+            }
         }
         .listRowInsets(EdgeInsets())
         .listRowSeparator(.hidden)
@@ -140,6 +144,7 @@ struct OrderDetails: View {
 
 struct ItemRow: View {
     
+    @State var showSheet: Bool = false
     var dish: Dish
     var quantity: Int
     
@@ -168,12 +173,18 @@ struct ItemRow: View {
             Divider()
                 .padding([.leading, .trailing])
         }
+        .onTapGesture {
+            showSheet.toggle()
+        }
+        .sheet(isPresented: $showSheet) {
+            DishDetails(dish: dish, isUpdate: true)
+        }
     }
 }
 
-struct OrderDetails_Previews: PreviewProvider {
-    static var previews: some View {
-        OrderDetails(restaurant: Restaurant.all[0], dishes: [Dish.all[0]:2, Dish.all[3]:1, Dish.all[4]:4])
-//        ItemRow(dish: Dish.all[0], quantity: 3)
-    }
-}
+//struct OrderDetails_Previews: PreviewProvider {
+//    static var previews: some View {
+//        OrderDetails(restaurant: Restaurant.all[0], dishes: [Dish.all[0]:2, Dish.all[3]:1, Dish.all[4]:4])
+////        ItemRow(dish: Dish.all[0], quantity: 3)
+//    }
+//}

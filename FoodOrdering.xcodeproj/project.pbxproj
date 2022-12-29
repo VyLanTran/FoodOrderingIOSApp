@@ -18,6 +18,7 @@
 		C862898229304B1F0027245C /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C862898129304B1F0027245C /* ViewRouter.swift */; };
 		C8BCCF33295C8645008496F6 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BCCF32295C8645008496F6 /* BrowseView.swift */; };
 		C8BCCF35295C8C98008496F6 /* CategoryCard2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BCCF34295C8C98008496F6 /* CategoryCard2.swift */; };
+		C8BCCF39295D05DB008496F6 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BCCF38295D05DB008496F6 /* BackButton.swift */; };
 		C8C7CE0D29574AE300BD75CE /* RestaurantInCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C7CE0C29574AE300BD75CE /* RestaurantInCart.swift */; };
 		C8D3E8CF292ED22B00876E12 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D3E8CE292ED22B00876E12 /* CartManager.swift */; };
 		C8D3E8D1292ED40100876E12 /* DishInCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D3E8D0292ED40100876E12 /* DishInCart.swift */; };
@@ -47,6 +48,7 @@
 		C862898129304B1F0027245C /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		C8BCCF32295C8645008496F6 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		C8BCCF34295C8C98008496F6 /* CategoryCard2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCard2.swift; sourceTree = "<group>"; };
+		C8BCCF38295D05DB008496F6 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		C8C7CE0C29574AE300BD75CE /* RestaurantInCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInCart.swift; sourceTree = "<group>"; };
 		C8D3E8CE292ED22B00876E12 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 		C8D3E8D0292ED40100876E12 /* DishInCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishInCart.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		C8FF411C292BD6EB0023B29F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C8BCCF38295D05DB008496F6 /* BackButton.swift */,
 				C8FF4131292D38810023B29F /* CategoryCard.swift */,
 				C8BCCF34295C8C98008496F6 /* CategoryCard2.swift */,
 				C8FF4133292D392D0023B29F /* DishCard.swift */,
@@ -240,6 +243,7 @@
 				C8DA89102958F63800B083CA /* OrderDetails.swift in Sources */,
 				C8FF4134292D392D0023B29F /* DishCard.swift in Sources */,
 				C8BCCF35295C8C98008496F6 /* CategoryCard2.swift in Sources */,
+				C8BCCF39295D05DB008496F6 /* BackButton.swift in Sources */,
 				C8FF4126292C3F830023B29F /* RestaurantsView.swift in Sources */,
 				C862898229304B1F0027245C /* ViewRouter.swift in Sources */,
 				C8D3E8CF292ED22B00876E12 /* CartManager.swift in Sources */,

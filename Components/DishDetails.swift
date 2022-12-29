@@ -12,6 +12,7 @@ struct DishDetails: View {
     @Environment(\.presentationMode) var presentationMode
     @StateObject var quantityViewModel = QuantityViewModel()
     var dish: Dish
+    var isUpdate: Bool = false
     
     var body: some View {
         
@@ -88,8 +89,14 @@ struct DishDetails: View {
                 HStack(spacing: 15) {
                     // Adjust quantity button
                     QuantityButton(quantityViewModel: quantityViewModel)
-                    // Add to Cart button
-                    AddToCartButton(dish: dish, quantityViewModel: quantityViewModel)
+                    
+                    if !isUpdate {
+                        // Add to Cart button
+                        AddToCartButton(dish: dish, quantityViewModel: quantityViewModel)
+                    }
+                    else {
+                        UpdateCartButton(dish: dish, quantityViewModel: quantityViewModel)
+                    }
                 }
             }
             .frame(height: 0)
@@ -155,6 +162,29 @@ struct AddToCartButton: View {
             presentationMode.wrappedValue.dismiss()
         } label: {
             Text("Add to Cart")
+                .font(.headline)
+                .frame(width: 200, height: 50)
+                .foregroundColor(.white)
+                .background(.black)
+                .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+        }
+    }
+}
+
+struct UpdateCartButton: View {
+    
+    @State var dish: Dish
+    @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var cartManager: CartManager
+    @ObservedObject var quantityViewModel: QuantityViewModel
+
+    var body: some View {
+        Button {
+            cartManager.order[dish.restaurant]![dish] = quantityViewModel.quantity
+            
+            presentationMode.wrappedValue.dismiss()
+        } label: {
+            Text("Update Cart")
                 .font(.headline)
                 .frame(width: 200, height: 50)
                 .foregroundColor(.white)

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+/**
 struct BottomNavBar: View {
     @State var selectedId: Int = 0
     
@@ -18,7 +18,7 @@ struct BottomNavBar: View {
                 
                 BottomNavBarItem(id: 2, image: Image(systemName: "magnifyingglass"), text: "Browse", page: .browseView, selectedId: $selectedId)
                 
-                CartLabel(selectedId: $selectedId)
+//                CartLabel(selectedId: $selectedId)
                 
                 BottomNavBarItem(id: 4, image: Image(systemName: "person.fill"), text: "Account", page: .homeScreen, selectedId: $selectedId)
                 
@@ -68,30 +68,31 @@ struct BottomNavBarItem: View {
 
 
 
-struct CartLabel: View {
-    @Binding var selectedId: Int
-    @EnvironmentObject var cartManager: CartManager
-    
-    var body: some View {
-        ZStack(alignment: .topTrailing) {
-            // Cart image
-            BottomNavBarItem(id: 3, image: Image(systemName: "cart.fill"), text: "Cart", page: .cartView, selectedId: $selectedId)
-            
-            if cartManager.getNumberOfItems() > 0 {
-                Text("\(cartManager.getNumberOfItems())")
-                    .font(.system(size: 12))
-                    .bold()
-                    .frame(width: 15, height: 15)
-                    .foregroundColor(.white)
-                    .background(Color(hue: 1.0, saturation: 0.93, brightness: 0.72))
-                    .cornerRadius(50)
-            }
-        }
-    }
-}
+//struct CartLabel: View {
+//    @Binding var selectedId: Int
+//    @EnvironmentObject var cartManager: CartManager
+//
+//    var body: some View {
+//        ZStack(alignment: .topTrailing) {
+//            // Cart image
+//            BottomNavBarItem(id: 3, image: Image(systemName: "cart.fill"), text: "Cart", page: .cartView, selectedId: $selectedId)
+//
+//            if cartManager.getNumberOfItems() > 0 {
+//                Text("\(cartManager.getNumberOfItems())")
+//                    .font(.system(size: 12))
+//                    .bold()
+//                    .frame(width: 15, height: 15)
+//                    .foregroundColor(.white)
+//                    .background(Color(hue: 1.0, saturation: 0.93, brightness: 0.72))
+//                    .cornerRadius(50)
+//            }
+//        }
+//    }
+//}
 
 struct BottomNavBar_Previews: PreviewProvider {
     static var previews: some View {
         BottomNavBar()
     }
 }
+ */

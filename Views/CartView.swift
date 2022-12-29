@@ -8,43 +8,10 @@
 import SwiftUI
 
 struct CartView: View {
+    
     @EnvironmentObject var cartManager: CartManager
-        
-    // Old version
-//    var body: some View {
-//        VStack {
-//            Text("My Order")
-//                .font(.title)
-//                .bold()
-//                .frame(maxWidth: .infinity, alignment: .leading)
-//                .padding()
-//
-//
-//            ScrollView {
-//                if cartManager.numberOfItems > 0 {
-//                    ForEach(Array(cartManager.order.keys), id: \.self) { restaurantName in
-//
-//                        let restaurant = Restaurant.all.filter { $0.name == restaurantName }[0]
-//
-//                        RestaurantInCart(restaurant: restaurant)
-//                    }
-//
-//                }
-//                else {
-//                    EmptyCart()
-//                }
-//            }
-//
-//            Spacer()
-//
-//            BottomNavBar()
-//        }
-//    }
+    @Binding var selectedTab: Tag
     
-    
-    
-    
-    // Official version
     var body: some View {
         VStack {
             Text("My Order")
@@ -60,12 +27,12 @@ struct CartView: View {
                 .listStyle(PlainListStyle())
             }
             else {
-                EmptyCart()
+                EmptyCart(selectedTab: $selectedTab)
+                
             }
 
             Spacer()
-
-            BottomNavBar()
+//            BottomNavBar()
         }
     }
 
@@ -83,59 +50,14 @@ struct CartView: View {
         .listRowInsets(EdgeInsets())
         .listRowSeparator(.hidden)
     }
-    
-    
-    
-    /**
-    // Unofficial version 2: Not using list
-     var body: some View {
-         VStack {
-             Text("My Order")
-                 .font(.title)
-                 .bold()
-                 .frame(maxWidth: .infinity, alignment: .leading)
-                 .padding()
-             
-             
-             ScrollView {
-                 if cartManager.numberOfItems > 0 {
-//                     ForEach(Array(cartManager.order.keys), id: \.self) { restaurantName in
-//
-//                         let restaurant = Restaurant.all.filter { $0.name == restaurantName }[0]
-//
-//                         RestaurantInCart(restaurant: restaurant)
-//                     }
-                     
-                 }
-                 else {
-                     EmptyCart()
-                 }
-             }
-             
-             Spacer()
-             
-             BottomNavBar()
-         }
-     }
-   
-//    private func listRestaurant(restaurants: [(key: String, value: [Dish : Int])]) -> some View {
-//        for index in 0...restaurants.count-1 {
-//            let restaurantName = restaurants[index].key
-//            let restaurant = Restaurant.all.filter { $0.name == restaurantName }[0]
-//
-//                 RestaurantInCart(restaurant: restaurant)
-//        }
-//    }
-    
-    */
-    
 }
 
 
 
 struct EmptyCart: View {
     
-    @EnvironmentObject var viewRouter: ViewRouter
+    @Binding var selectedTab: Tag
+//    @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
         VStack(spacing: 40) {
@@ -147,9 +69,10 @@ struct EmptyCart: View {
                 .font(.title3)
                 .bold()
             
-            // Start Ordering button
+            // "Start Ordering" button
             Button {
-                viewRouter.currentPage = .homeScreen
+//                viewRouter.currentPage = .homeScreen
+                self.selectedTab = Tag.homeScreen
             } label: {
                 Text("Start Ordering")
                     .font(.headline)
@@ -163,13 +86,4 @@ struct EmptyCart: View {
     }
 }
 
-
-struct CartView_Previews: PreviewProvider {
-    static var previews: some View {
-//        CartView()
-//            .environmentObject(CartManager())
-        
-        EmptyCart()
-    }
-}
 

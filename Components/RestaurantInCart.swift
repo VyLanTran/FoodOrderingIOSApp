@@ -94,8 +94,10 @@ struct RestaurantInCart: View {
             showSheet.toggle()
         }
         .sheet(isPresented: $showSheet) {
-            OrderDetails(restaurant: restaurant, dishes: cartManager.order[restaurant.name]!)
-                .presentationDetents([.fraction(0.75)])
+            if cartManager.order.keys.contains(restaurant.name) {
+                OrderDetails(restaurant: restaurant, dishes: cartManager.order[restaurant.name]!, restaurantShowSheet: $showSheet)
+                    .presentationDetents([.fraction(0.75)])
+            }
         }
     }
 }
