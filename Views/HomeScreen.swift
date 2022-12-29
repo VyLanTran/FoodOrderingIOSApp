@@ -10,8 +10,8 @@ import SwiftUI
 struct HomeScreen: View {
     
     @EnvironmentObject var cartManager: CartManager
-    @State var selection: String = "Restaurant"
-    private let filterOptions = ["Restaurant", "Dish", "Price", "Nearby", "Time"]
+//    @State var selection: String = "Restaurant"
+//    private let filterOptions = ["Restaurant", "Dish", "Price", "Nearby", "Time"]
 
     var body: some View {
         NavigationView {
@@ -21,10 +21,10 @@ struct HomeScreen: View {
                     SearchView()
                 }
                 
-                OptionsView(selection: $selection)
-                    .padding(.vertical)
+//                OptionsView(selection: $selection)
+//                    .padding(.vertical)
                 
-                if (selection == "Restaurant") {
+//                if (selection == "Restaurant") {
                     ScrollView {
                         VStack(spacing: 30) {
                             // Ethnic restaurants
@@ -83,7 +83,7 @@ struct HomeScreen: View {
                             }
                         }
                     }
-                }
+//                }
                 
 //                Spacer()
 //
@@ -148,49 +148,49 @@ struct SearchView: View {
     }
 }
 
-struct OptionsView: View {
-    
-    @State private var selectedIndex: Int = 0
-    @Binding var selection: String
-    private let options = ["Restaurant", "Dishes", "Price"]
-    
-    var body: some View {
-        ScrollView (.horizontal, showsIndicators: false) {
-            HStack(spacing: 20) {
-                ForEach(0 ..< options.count) { i in
-                    OptionView(isSelected: i == selectedIndex, text: options[i])
-                        .onTapGesture {
-                            selectedIndex = i
-                            selection = options[i]
-                        }
-                }
-            }
-            .padding(.horizontal)
-        }
-    }
-}
+//struct OptionsView: View {
+//
+//    @State private var selectedIndex: Int = 0
+//    @Binding var selection: String
+//    private let options = ["Restaurant", "Dishes", "Price"]
+//
+//    var body: some View {
+//        ScrollView (.horizontal, showsIndicators: false) {
+//            HStack(spacing: 20) {
+//                ForEach(0 ..< options.count) { i in
+//                    OptionView(isSelected: i == selectedIndex, text: options[i])
+//                        .onTapGesture {
+//                            selectedIndex = i
+//                            selection = options[i]
+//                        }
+//                }
+//            }
+//            .padding(.horizontal)
+//        }
+//    }
+//}
 
-struct OptionView: View {
-    let isSelected: Bool
-    let text: String
-    
-    var body: some View {
-        VStack(spacing: 2) {
-            Text(text)
-                .font(.system(size: 16))
-                .foregroundColor(isSelected ? Color.black : Color.gray)
-                .fontWeight(.medium)
-                
-            if (isSelected) {
-                Color.black
-                    .frame(height: 2)
-            }
-            else {
-                Color.clear.frame(height: 2)
-            }
-        }
-    }
-}
+//struct OptionView: View {
+//    let isSelected: Bool
+//    let text: String
+//
+//    var body: some View {
+//        VStack(spacing: 2) {
+//            Text(text)
+//                .font(.system(size: 16))
+//                .foregroundColor(isSelected ? Color.black : Color.gray)
+//                .fontWeight(.medium)
+//
+//            if (isSelected) {
+//                Color.black
+//                    .frame(height: 2)
+//            }
+//            else {
+//                Color.clear.frame(height: 2)
+//            }
+//        }
+//    }
+//}
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {

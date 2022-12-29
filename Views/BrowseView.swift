@@ -13,9 +13,9 @@ struct BrowseView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                //TODO: Search bar stays on top as we scroll down
-                Text("Top bar")
+//            VStack {
+//                Text("Browse")
+//                    .bold()
                 
                 ScrollView {
                     VStack(spacing: 30) {
@@ -58,12 +58,13 @@ struct BrowseView: View {
                         }
                     }
                 }
+                .navigationBarTitle("Restaurant Categories", displayMode: .inline)
                 
 //                Spacer()
 //
 //                BottomNavBar()
 //                    .padding(.top)
-            }
+//            }
         }
     }
 }
