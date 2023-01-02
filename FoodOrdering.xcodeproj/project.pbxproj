@@ -14,7 +14,36 @@
 		C837751729296D090000877A /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837751629296D090000877A /* HomeScreen.swift */; };
 		C8377526292A25580000877A /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8377525292A25580000877A /* Dish.swift */; };
 		C8377528292A2A890000877A /* RestaurantCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8377527292A2A890000877A /* RestaurantCategories.swift */; };
-		C862898029304AAD0027245C /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = C862897F29304AAD0027245C /* Page.swift */; };
+		C89D215529626668000A408D /* search.svg in Resources */ = {isa = PBXBuildFile; fileRef = C89D212629626668000A408D /* search.svg */; };
+		C89D215629626668000A408D /* empty_cart.png in Resources */ = {isa = PBXBuildFile; fileRef = C89D212729626668000A408D /* empty_cart.png */; };
+		C89D215729626668000A408D /* Chinese.png in Resources */ = {isa = PBXBuildFile; fileRef = C89D212829626668000A408D /* Chinese.png */; };
+		C89D215829626668000A408D /* bell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C89D212929626668000A408D /* bell.jpg */; };
+		C89D215929626668000A408D /* Coffee.png in Resources */ = {isa = PBXBuildFile; fileRef = C89D212A29626668000A408D /* Coffee.png */; };
+		C89D215A29626668000A408D /* American.png in Resources */ = {isa = PBXBuildFile; fileRef = C89D212B29626668000A408D /* American.png */; };
+		C89D215B29626668000A408D /* Mexican.png in Resources */ = {isa = PBXBuildFile; fileRef = C89D212C29626668000A408D /* Mexican.png */; };
+		C89D215C29626668000A408D /* Japanese.png in Resources */ = {isa = PBXBuildFile; fileRef = C89D212D29626668000A408D /* Japanese.png */; };
+		C89D215D29626668000A408D /* FastFood.png in Resources */ = {isa = PBXBuildFile; fileRef = C89D212E29626668000A408D /* FastFood.png */; };
+		C89D215E29626668000A408D /* Vegan.png in Resources */ = {isa = PBXBuildFile; fileRef = C89D212F29626668000A408D /* Vegan.png */; };
+		C89D215F29626668000A408D /* Healthy.png in Resources */ = {isa = PBXBuildFile; fileRef = C89D213029626668000A408D /* Healthy.png */; };
+		C89D216029626668000A408D /* Thai.png in Resources */ = {isa = PBXBuildFile; fileRef = C89D213129626668000A408D /* Thai.png */; };
+		C89D216129626668000A408D /* Italian.png in Resources */ = {isa = PBXBuildFile; fileRef = C89D213229626668000A408D /* Italian.png */; };
+		C89D216229626668000A408D /* Pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = C89D213329626668000A408D /* Pizza.png */; };
+		C89D216329626668000A408D /* Breakfast.png in Resources */ = {isa = PBXBuildFile; fileRef = C89D213429626668000A408D /* Breakfast.png */; };
+		C89D216429626668000A408D /* gray.json in Resources */ = {isa = PBXBuildFile; fileRef = C89D213529626668000A408D /* gray.json */; };
+		C89D216729626668000A408D /* DishCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89D213A29626668000A408D /* DishCard.swift */; };
+		C89D216829626668000A408D /* OrderDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89D213B29626668000A408D /* OrderDetails.swift */; };
+		C89D216929626668000A408D /* CategoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89D213C29626668000A408D /* CategoryCard.swift */; };
+		C89D216A29626668000A408D /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89D213D29626668000A408D /* CartManager.swift */; };
+		C89D216B29626668000A408D /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89D213E29626668000A408D /* BackButton.swift */; };
+		C89D216C29626668000A408D /* RestaurantCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89D213F29626668000A408D /* RestaurantCard.swift */; };
+		C89D216D29626668000A408D /* DishDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89D214029626668000A408D /* DishDetails.swift */; };
+		C89D216E29626668000A408D /* CategoryCard2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89D214129626668000A408D /* CategoryCard2.swift */; };
+		C89D216F29626668000A408D /* RestaurantInCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89D214229626668000A408D /* RestaurantInCart.swift */; };
+		C89D217029626668000A408D /* DishInCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89D214329626668000A408D /* DishInCart.swift */; };
+		C89D217129626668000A408D /* RestaurantCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89D214429626668000A408D /* RestaurantCategories.swift */; };
+		C89D217229626668000A408D /* FoodOrderingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89D214629626668000A408D /* FoodOrderingApp.swift */; };
+		C89D217329626668000A408D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89D214729626668000A408D /* Assets.xcassets */; };
+		C89D217429626668000A408D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89D214929626668000A408D /* Preview Assets.xcassets */; };
 		C8BCCF33295C8645008496F6 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BCCF32295C8645008496F6 /* BrowseView.swift */; };
 		C8BCCF35295C8C98008496F6 /* CategoryCard2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BCCF34295C8C98008496F6 /* CategoryCard2.swift */; };
 		C8BCCF39295D05DB008496F6 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BCCF38295D05DB008496F6 /* BackButton.swift */; };
@@ -42,7 +71,37 @@
 		C837751629296D090000877A /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		C8377525292A25580000877A /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		C8377527292A2A890000877A /* RestaurantCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCategories.swift; sourceTree = "<group>"; };
-		C862897F29304AAD0027245C /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		C89D212629626668000A408D /* search.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = search.svg; sourceTree = "<group>"; };
+		C89D212729626668000A408D /* empty_cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_cart.png; sourceTree = "<group>"; };
+		C89D212829626668000A408D /* Chinese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chinese.png; sourceTree = "<group>"; };
+		C89D212929626668000A408D /* bell.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bell.jpg; sourceTree = "<group>"; };
+		C89D212A29626668000A408D /* Coffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Coffee.png; sourceTree = "<group>"; };
+		C89D212B29626668000A408D /* American.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = American.png; sourceTree = "<group>"; };
+		C89D212C29626668000A408D /* Mexican.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mexican.png; sourceTree = "<group>"; };
+		C89D212D29626668000A408D /* Japanese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Japanese.png; sourceTree = "<group>"; };
+		C89D212E29626668000A408D /* FastFood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FastFood.png; sourceTree = "<group>"; };
+		C89D212F29626668000A408D /* Vegan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vegan.png; sourceTree = "<group>"; };
+		C89D213029626668000A408D /* Healthy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Healthy.png; sourceTree = "<group>"; };
+		C89D213129626668000A408D /* Thai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Thai.png; sourceTree = "<group>"; };
+		C89D213229626668000A408D /* Italian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Italian.png; sourceTree = "<group>"; };
+		C89D213329626668000A408D /* Pizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pizza.png; sourceTree = "<group>"; };
+		C89D213429626668000A408D /* Breakfast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Breakfast.png; sourceTree = "<group>"; };
+		C89D213529626668000A408D /* gray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gray.json; sourceTree = "<group>"; };
+		C89D213A29626668000A408D /* DishCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishCard.swift; sourceTree = "<group>"; };
+		C89D213B29626668000A408D /* OrderDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetails.swift; sourceTree = "<group>"; };
+		C89D213C29626668000A408D /* CategoryCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCard.swift; sourceTree = "<group>"; };
+		C89D213D29626668000A408D /* CartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		C89D213E29626668000A408D /* BackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		C89D213F29626668000A408D /* RestaurantCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantCard.swift; sourceTree = "<group>"; };
+		C89D214029626668000A408D /* DishDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishDetails.swift; sourceTree = "<group>"; };
+		C89D214129626668000A408D /* CategoryCard2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCard2.swift; sourceTree = "<group>"; };
+		C89D214229626668000A408D /* RestaurantInCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantInCart.swift; sourceTree = "<group>"; };
+		C89D214329626668000A408D /* DishInCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishInCart.swift; sourceTree = "<group>"; };
+		C89D214429626668000A408D /* RestaurantCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantCategories.swift; sourceTree = "<group>"; };
+		C89D214629626668000A408D /* FoodOrderingApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodOrderingApp.swift; sourceTree = "<group>"; };
+		C89D214729626668000A408D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C89D214929626668000A408D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C89D214A29626668000A408D /* FoodOrdering.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = FoodOrdering.xcodeproj; sourceTree = "<group>"; };
 		C8BCCF32295C8645008496F6 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		C8BCCF34295C8C98008496F6 /* CategoryCard2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCard2.swift; sourceTree = "<group>"; };
 		C8BCCF38295D05DB008496F6 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
@@ -75,14 +134,13 @@
 		C83774FC29296CCC0000877A = {
 			isa = PBXGroup;
 			children = (
-				C8D3E8CE292ED22B00876E12 /* CartManager.swift */,
+				C89D212429626668000A408D /* FoodOrdering */,
 				C8FF411C292BD6EB0023B29F /* Components */,
 				C837750729296CCC0000877A /* FoodOrdering */,
 				C8377518292972870000877A /* Images */,
 				C8FF411A292BD6970023B29F /* Models */,
-				C862897F29304AAD0027245C /* Page.swift */,
-				C837750629296CCC0000877A /* Products */,
 				C8FF411B292BD6E10023B29F /* Views */,
+				C837750629296CCC0000877A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +177,81 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		C89D212429626668000A408D /* FoodOrdering */ = {
+			isa = PBXGroup;
+			children = (
+				C89D212529626668000A408D /* Images */,
+				C89D213929626668000A408D /* Components */,
+				C89D214529626668000A408D /* FoodOrdering */,
+				C89D214A29626668000A408D /* FoodOrdering.xcodeproj */,
+			);
+			name = FoodOrdering;
+			sourceTree = "<group>";
+		};
+		C89D212529626668000A408D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C89D212629626668000A408D /* search.svg */,
+				C89D212729626668000A408D /* empty_cart.png */,
+				C89D212829626668000A408D /* Chinese.png */,
+				C89D212929626668000A408D /* bell.jpg */,
+				C89D212A29626668000A408D /* Coffee.png */,
+				C89D212B29626668000A408D /* American.png */,
+				C89D212C29626668000A408D /* Mexican.png */,
+				C89D212D29626668000A408D /* Japanese.png */,
+				C89D212E29626668000A408D /* FastFood.png */,
+				C89D212F29626668000A408D /* Vegan.png */,
+				C89D213029626668000A408D /* Healthy.png */,
+				C89D213129626668000A408D /* Thai.png */,
+				C89D213229626668000A408D /* Italian.png */,
+				C89D213329626668000A408D /* Pizza.png */,
+				C89D213429626668000A408D /* Breakfast.png */,
+				C89D213529626668000A408D /* gray.json */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		C89D213929626668000A408D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C89D213A29626668000A408D /* DishCard.swift */,
+				C89D213B29626668000A408D /* OrderDetails.swift */,
+				C89D213C29626668000A408D /* CategoryCard.swift */,
+				C89D213D29626668000A408D /* CartManager.swift */,
+				C89D213E29626668000A408D /* BackButton.swift */,
+				C89D213F29626668000A408D /* RestaurantCard.swift */,
+				C89D214029626668000A408D /* DishDetails.swift */,
+				C89D214129626668000A408D /* CategoryCard2.swift */,
+				C89D214229626668000A408D /* RestaurantInCart.swift */,
+				C89D214329626668000A408D /* DishInCart.swift */,
+				C89D214429626668000A408D /* RestaurantCategories.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C89D214529626668000A408D /* FoodOrdering */ = {
+			isa = PBXGroup;
+			children = (
+				C89D214629626668000A408D /* FoodOrderingApp.swift */,
+				C89D214729626668000A408D /* Assets.xcassets */,
+				C89D214829626668000A408D /* Preview Content */,
+			);
+			path = FoodOrdering;
+			sourceTree = "<group>";
+		};
+		C89D214829626668000A408D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C89D214929626668000A408D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C89D214B29626668000A408D /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C8FF411A292BD6970023B29F /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +278,7 @@
 		C8FF411C292BD6EB0023B29F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C8D3E8CE292ED22B00876E12 /* CartManager.swift */,
 				C8BCCF38295D05DB008496F6 /* BackButton.swift */,
 				C8FF4131292D38810023B29F /* CategoryCard.swift */,
 				C8BCCF34295C8C98008496F6 /* CategoryCard2.swift */,
@@ -205,6 +339,12 @@
 			mainGroup = C83774FC29296CCC0000877A;
 			productRefGroup = C837750629296CCC0000877A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C89D214B29626668000A408D /* Products */;
+					ProjectRef = C89D214A29626668000A408D /* FoodOrdering.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C837750429296CCC0000877A /* FoodOrdering */,
@@ -217,8 +357,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C89D215D29626668000A408D /* FastFood.png in Resources */,
+				C89D215F29626668000A408D /* Healthy.png in Resources */,
+				C89D215529626668000A408D /* search.svg in Resources */,
+				C89D217329626668000A408D /* Assets.xcassets in Resources */,
+				C89D215629626668000A408D /* empty_cart.png in Resources */,
+				C89D216129626668000A408D /* Italian.png in Resources */,
+				C89D215929626668000A408D /* Coffee.png in Resources */,
 				C837751029296CCD0000877A /* Preview Assets.xcassets in Resources */,
+				C89D215E29626668000A408D /* Vegan.png in Resources */,
+				C89D216029626668000A408D /* Thai.png in Resources */,
+				C89D216329626668000A408D /* Breakfast.png in Resources */,
+				C89D215B29626668000A408D /* Mexican.png in Resources */,
+				C89D217429626668000A408D /* Preview Assets.xcassets in Resources */,
+				C89D216229626668000A408D /* Pizza.png in Resources */,
+				C89D216429626668000A408D /* gray.json in Resources */,
+				C89D215729626668000A408D /* Chinese.png in Resources */,
+				C89D215C29626668000A408D /* Japanese.png in Resources */,
+				C89D215829626668000A408D /* bell.jpg in Resources */,
 				C837750D29296CCD0000877A /* Assets.xcassets in Resources */,
+				C89D215A29626668000A408D /* American.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,20 +391,31 @@
 				C8D3E8D1292ED40100876E12 /* DishInCart.swift in Sources */,
 				C8FF4128292C865A0023B29F /* RestaurantList.swift in Sources */,
 				C8FF4124292BFF480023B29F /* Restaurant.swift in Sources */,
+				C89D216E29626668000A408D /* CategoryCard2.swift in Sources */,
 				C8FF411E292BED770023B29F /* RestaurantCard.swift in Sources */,
 				C8DA89102958F63800B083CA /* OrderDetails.swift in Sources */,
 				C8FF4134292D392D0023B29F /* DishCard.swift in Sources */,
 				C8BCCF35295C8C98008496F6 /* CategoryCard2.swift in Sources */,
 				C8BCCF39295D05DB008496F6 /* BackButton.swift in Sources */,
 				C8FF4126292C3F830023B29F /* RestaurantsView.swift in Sources */,
+				C89D216729626668000A408D /* DishCard.swift in Sources */,
+				C89D216B29626668000A408D /* BackButton.swift in Sources */,
 				C8D3E8CF292ED22B00876E12 /* CartManager.swift in Sources */,
-				C862898029304AAD0027245C /* Page.swift in Sources */,
 				C8377526292A25580000877A /* Dish.swift in Sources */,
+				C89D217229626668000A408D /* FoodOrderingApp.swift in Sources */,
+				C89D217129626668000A408D /* RestaurantCategories.swift in Sources */,
 				C8D3E8D3292EDB0000876E12 /* CartView.swift in Sources */,
+				C89D216C29626668000A408D /* RestaurantCard.swift in Sources */,
+				C89D216D29626668000A408D /* DishDetails.swift in Sources */,
 				C837750B29296CCD0000877A /* ContentView.swift in Sources */,
 				C8C7CE0D29574AE300BD75CE /* RestaurantInCart.swift in Sources */,
+				C89D217029626668000A408D /* DishInCart.swift in Sources */,
 				C8FF4130292D32E30023B29F /* DishDetails.swift in Sources */,
+				C89D216A29626668000A408D /* CartManager.swift in Sources */,
+				C89D216929626668000A408D /* CategoryCard.swift in Sources */,
 				C837750929296CCD0000877A /* FoodOrderingApp.swift in Sources */,
+				C89D216829626668000A408D /* OrderDetails.swift in Sources */,
+				C89D216F29626668000A408D /* RestaurantInCart.swift in Sources */,
 				C837751729296D090000877A /* HomeScreen.swift in Sources */,
 				C8BCCF33295C8645008496F6 /* BrowseView.swift in Sources */,
 				C8FF4136292D4B370023B29F /* RestaurantMenu.swift in Sources */,
