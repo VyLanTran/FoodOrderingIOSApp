@@ -6,12 +6,9 @@ Download the zip file of the project, import it in XCode and run
 
 # Screenshots of the app and important features
 
-<p float="left">
-  <div>
+<p float="left" style="width:10px">
   <img width="309" alt="home_screen" src="https://user-images.githubusercontent.com/85639418/210683446-c465f7e8-116a-4f4a-a377-29eac26093be.png">
-  <br>
   <img width="302" alt="browse" src="https://user-images.githubusercontent.com/85639418/210683458-47b42293-480a-4351-93e4-a82b52754dfb.png">
-    </div>
 </p>
 
 
