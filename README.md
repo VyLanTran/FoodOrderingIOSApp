@@ -7,9 +7,10 @@ Download the zip file of the project, import it in XCode and run
 # Screenshots of the app and important features
 
 <p float="left">
-<img width="249" alt="american" src="https://user-images.githubusercontent.com/85639418/210682814-6216ebce-ff92-490a-93e6-8170682e09e1.png">
-  <img width="311" alt="american" src="https://user-images.githubusercontent.com/85639418/210682923-f708186d-25cd-48e7-851c-45545b922223.png">
-  <img width="343" alt="browse" src="https://user-images.githubusercontent.com/85639418/210682986-f6492aaa-c2eb-41f5-8d70-7735276f9658.png">
+  <img width="309" alt="home_screen" src="https://user-images.githubusercontent.com/85639418/210683446-c465f7e8-116a-4f4a-a377-29eac26093be.png">
+  <br>
+  <img width="302" alt="browse" src="https://user-images.githubusercontent.com/85639418/210683458-47b42293-480a-4351-93e4-a82b52754dfb.png">
+
 </p>
 
 
