@@ -288,6 +288,40 @@ extension Dish {
             restaurant: "The Cheesecake Factory",
             category: "Dessert"
         ),
+        
+        
+        Dish(
+            name: "French Onion",
+            image: "https://kristineskitchenblog.com/wp-content/uploads/2021/05/french-onion-soup-1200-square-122.jpg",
+            price: 9.00,
+            description: "Caramelized onion, sherry, gruyere",
+            restaurant: "Brasserie Louis",
+            category: "SoupAndSide"
+        ),
+        Dish(
+            name: "Lamb Rack",
+            image: "https://www.eatwell101.com/wp-content/uploads/2021/03/Roasted-Rack-of-Lamb-recipe-1.jpg",
+            price: 44.00,
+            description: "Celery root parsnip puree, Brussel sprouts, whole grain mustard herb crust",
+            restaurant: "Brasserie Louis",
+            category: "Main"
+        ),
+        Dish(
+            name: "Pork Saltimbocca",
+            image: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/1/31/1/FNM_030113-Pork-Chops-Saltimbocca-Recipe_s4x3.jpg.rend.hgtvcom.616.462.suffix/1371613828334.jpeg",
+            price: 14.00,
+            description: "Prosciutto, sage, bright lights chard",
+            restaurant: "Brasserie Louis",
+            category: "Main"
+        ),
+        Dish(
+            name: "Oysters on the Half Shell",
+            image: "https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/zfsnvxdr/a147ed2d-23e6-4cae-a893-75c095799d11.jpg",
+            price: 25.00,
+            description: "Cocktail sauce, mignonette",
+            restaurant: "Brasserie Louis",
+            category: "Main"
+        ),
 
 
         Dish(

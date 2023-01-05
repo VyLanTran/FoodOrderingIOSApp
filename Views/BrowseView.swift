@@ -25,11 +25,31 @@ struct BrowseView: View {
                                 .padding()
                             Spacer()
                         }
-                        HStack(spacing: 15) {
-                            CategoryCard2(category: "Mexican", image: Image("Mexican"))
-                            CategoryCard2(category: "Italian", image: Image("Italian"))
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 20) {
+                                NavigationLink {
+                                    RestaurantsView(restaurantCategory: RestaurantCategory.coffeeAndTea)
+                                } label: {
+                                    CategoryCard2(category: "Coffee and Tea", image: Image("Coffee and Tea"))
+                                }
+                                NavigationLink {
+                                    RestaurantsView(restaurantCategory: RestaurantCategory.healthy)
+                                } label: {
+                                    CategoryCard2(category: "Healthy", image: Image("Healthy"))
+                                }
+                                NavigationLink {
+                                    RestaurantsView(restaurantCategory: RestaurantCategory.fastFood)
+                                } label: {
+                                    CategoryCard2(category: "Fast Food", image: Image("Fast Food"))
+                                }
+                                NavigationLink {
+                                    RestaurantsView(restaurantCategory: RestaurantCategory.breakfastAndBrunch)
+                                } label: {
+                                    CategoryCard2(category: "Breakfast and Brunch", image: Image("Breakfast and Brunch"))
+                                }
+                            }
+                            .padding(.horizontal)
                         }
-                        .padding(.horizontal)
                     }
                     
                     // All categories
