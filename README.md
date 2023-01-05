@@ -1,2 +1,2 @@
 # Food Ordering App
-A Food Ordering &amp; Delivery app. Users can choose their favorites from a variety of restaurants and have them delivered to their house. 
+This is a Food Ordering app that suggests user various restaurants based on ethnic cuisines, popularity and rating. You can browse through the menu of each restaurant and add dishes with a specific quantity to the cart. You can also access the cart to adjust the quantity of each item, remove any item, or add more items. The total bill of your order will be updated upon your change. 
