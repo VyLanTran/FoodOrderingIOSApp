@@ -7,9 +7,19 @@ Download the zip file of the project, import it in XCode and run
 # Screenshots of the app and important features
 
 <div float="left" class="horizontalgap" style="width:10px">
-  <img width="309" alt="home_screen" src="https://user-images.githubusercontent.com/85639418/210683446-c465f7e8-116a-4f4a-a377-29eac26093be.png">
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img width="302" alt="browse" src="https://user-images.githubusercontent.com/85639418/210683458-47b42293-480a-4351-93e4-a82b52754dfb.png">
+  <ul>
+    <li>The bottom navbar contains 3 items that will navigate you to the Home view, Browse view, and Cart view as you click</li>
+    <li>Home page suggests the most-popular and highest-rating restaurants. Users can swipe the row to view all restaurants</li>
+    <li>Browse page lists many categories of food. Click on a card to view more restaurants in that category</li>
+  </ul>
+  <br>
+  <img width="300" alt="01" src="https://user-images.githubusercontent.com/85639418/217957849-0b954aea-8a46-43d8-ab47-93565596223d.png">
+  &emsp;&emsp;
+  <img width="300" alt="02" src="https://user-images.githubusercontent.com/85639418/217957868-f087a3f7-d8e7-4e3d-8ed2-8c5e05e733fa.png">
+  &emsp;&emsp;
+  <img width="310" alt="03" src="https://user-images.githubusercontent.com/85639418/217958017-b044dc08-cb72-47ad-8b0b-d93f98ea3264.png">
+  <br>
+  <p align="center"><b>Home view&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Browse view&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Cart view</p>
 </div>
 
 
