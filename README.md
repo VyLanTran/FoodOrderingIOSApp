@@ -6,20 +6,38 @@ Download the zip file of the project, import it in XCode and run
 
 # Screenshots of the app and important features
 
-<div float="left" class="horizontalgap" style="width:10px">
+<div>
   <ul>
     <li>The bottom navbar contains 3 items that will navigate you to the Home view, Browse view, and Cart view as you click</li>
     <li>Home page suggests the most-popular and highest-rating restaurants. Users can swipe the row to view all restaurants</li>
     <li>Browse page lists many categories of food. Click on a card to view more restaurants in that category</li>
   </ul>
   <br>
-  <img width="300" alt="01" src="https://user-images.githubusercontent.com/85639418/217957849-0b954aea-8a46-43d8-ab47-93565596223d.png">
-  &emsp;&emsp;
-  <img width="300" alt="02" src="https://user-images.githubusercontent.com/85639418/217957868-f087a3f7-d8e7-4e3d-8ed2-8c5e05e733fa.png">
-  &emsp;&emsp;
-  <img width="310" alt="03" src="https://user-images.githubusercontent.com/85639418/217958017-b044dc08-cb72-47ad-8b0b-d93f98ea3264.png">
+  <div align="center">
+    <img width="300" alt="01" src="https://user-images.githubusercontent.com/85639418/217957849-0b954aea-8a46-43d8-ab47-93565596223d.png">
+    &emsp;&emsp;
+    <img width="300" alt="02" src="https://user-images.githubusercontent.com/85639418/217957868-f087a3f7-d8e7-4e3d-8ed2-8c5e05e733fa.png">
+    &emsp;&emsp;
+    <img width="310" alt="03" src="https://user-images.githubusercontent.com/85639418/217958017-b044dc08-cb72-47ad-8b0b-d93f98ea3264.png">
+  </div>
   <br>
   <p align="center"><b>Home view&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Browse view&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Cart view</p>
+</div>
+<br><br>
+
+<div>
+  <ul>
+    <li>The left image shows all restaurant serving traditional American food</li>
+    <li>When you click on a restaurant, the menu will be displayed</li>
+  </ul>
+  <br>
+  <div align="center">
+    <img width="346" alt="04" src="https://user-images.githubusercontent.com/85639418/217961507-f5461d60-fb55-47e1-8794-2eb4935a2754.png">
+    &emsp;&emsp;
+    <img width="347" alt="05" src="https://user-images.githubusercontent.com/85639418/217961525-2e804108-6db7-40b8-8a55-489d117eb5ec.png">
+  </div>
+  <br>
+  <p align="center"><b>Restaurant list&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Menu</p>
 </div>
 
 
