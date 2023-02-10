@@ -21,7 +21,7 @@ Download the zip file of the project, import it in XCode and run
     <img width="250" alt="03" src="https://user-images.githubusercontent.com/85639418/217958017-b044dc08-cb72-47ad-8b0b-d93f98ea3264.png">
   </div>
   <br>
-  <p align="center"><b>Home view&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Browse view&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Cart view</p>
+  <p align="center"><b>Home view&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Browse view&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Cart view</p>
 </div>
 <br><br>
 
