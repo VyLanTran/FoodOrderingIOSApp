@@ -55,6 +55,7 @@ Download the zip file of the project, import it in XCode and run
   <br>
   <p align="center"><b>Dish detail list&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Cart updated</p>
 </div>
+<br><br>
 
 <div>
   <ul>
@@ -70,5 +71,27 @@ Download the zip file of the project, import it in XCode and run
   <br>
   <p align="center"><b>Cart view</p>
 </div>
+<br><br>
+
+<div>
+  <ul>
+    <li>You can swipe right to remove an item out of the order (first image)</li>
+    <li>Hit "Add items" to go back to the store and choose more dishes (this way you don't have to find the restaurant from the Home page)</li>
+    <li>Click on an item to adjust its quantity (second image)</li>
+    <li>Any change will appear on the bill immediately</li>
+    <li>Finally, you can delete the whole order of a restaurant by swiping right on that row (last image)</li>
+  </ul>
+  <br>
+  <div align="center">
+    <img width="300" alt="10" src="https://user-images.githubusercontent.com/85639418/217973518-8f4ea2c1-f5b3-40e7-bb8d-1303d33c7f6b.png">
+    &emsp;&emsp;
+    <img width="300" alt="11" src="https://user-images.githubusercontent.com/85639418/217973544-1b007887-39dd-4ae9-a3d4-c4881e3eee96.png">
+    &emsp;&emsp;
+    <img width="300" alt="12" src="https://user-images.githubusercontent.com/85639418/217973560-f252de95-b307-46c9-a0b6-c05c40a84d41.png">
+  </div>
+  <br>
+  <p align="center"><b>Cart view</p>
+</div>
+
 
 
