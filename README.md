@@ -28,7 +28,7 @@ Download the zip file of the project, import it in XCode and run
 <div>
   <ul>
     <li>The left image shows all restaurant serving traditional American food</li>
-    <li>When you click on a restaurant, the menu will be displayed</li>
+    <li>When you click on a restaurant, its menu will be displayed</li>
   </ul>
   <br>
   <div align="center">
@@ -54,6 +54,21 @@ Download the zip file of the project, import it in XCode and run
   </div>
   <br>
   <p align="center"><b>Dish detail list&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Cart updated</p>
+</div>
+
+<div>
+  <ul>
+    <li>The Cart view shows you everything you added to the cart; items from the same restaurant will be grouped together</li>
+    <li>Click on a restaurant to view the full order</li>
+  </ul>
+  <br>
+  <div align="center">
+    <img width="348" alt="08" src="https://user-images.githubusercontent.com/85639418/217972082-159eb5c6-2a52-488d-bf83-70166b598c0c.png">
+    &emsp;&emsp;
+    <img width="352" alt="09" src="https://user-images.githubusercontent.com/85639418/217972101-144f57b4-8108-42e1-8fb7-d4ebf7faedb3.png">
+  </div>
+  <br>
+  <p align="center"><b>Cart view</p>
 </div>
 
 
