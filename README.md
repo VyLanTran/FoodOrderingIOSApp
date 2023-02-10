@@ -39,5 +39,21 @@ Download the zip file of the project, import it in XCode and run
   <br>
   <p align="center"><b>Restaurant list&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Menu</p>
 </div>
+<br><br>
+
+<div>
+  <ul>
+    <li>As you click on a dish, a sheet will be pulled up showing the details (image, description, price) and let you choose the quantity</li>
+    <li>Hit "Add to cart" and you will see the cart icon (on the bottom navbar) being updated right away</li>
+  </ul>
+  <br>
+  <div align="center">
+    <img width="350" alt="06" src="https://user-images.githubusercontent.com/85639418/217966976-8e8a9a88-7948-4806-b029-9f0eb71a43de.png">
+    &emsp;&emsp;
+    <img width="346" alt="07" src="https://user-images.githubusercontent.com/85639418/217967021-ddb998bc-db3d-44ae-bacb-18bc84a56a6f.png">
+  </div>
+  <br>
+  <p align="center"><b>Dish detail list&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Cart updated</p>
+</div>
 
 
