@@ -28,7 +28,7 @@ Download the zip file of the project, import it in XCode and run
 <div>
   <ul>
     <li>The left image shows all restaurant serving traditional American food</li>
-    <li>When you click on a restaurant, its menu will be displayed</li>
+    <li>When you click on a restaurant, its menu will be displayed (right image)</li>
   </ul>
   <br>
   <div align="center">
@@ -43,8 +43,8 @@ Download the zip file of the project, import it in XCode and run
 
 <div>
   <ul>
-    <li>As you click on a dish, a sheet will be pulled up showing the details (image, description, price) and let you choose the quantity</li>
-    <li>Hit "Add to cart" and you will see the cart icon (on the bottom navbar) being updated right away</li>
+    <li>As you click on a dish, a sheet will be pulled up showing the details (image, description, price) and let you choose the quantity (left image)</li>
+    <li>Hit "Add to cart" and you will see the cart icon (on the bottom navbar) being updated right away (right image)</li>
   </ul>
   <br>
   <div align="center">
@@ -59,8 +59,8 @@ Download the zip file of the project, import it in XCode and run
 
 <div>
   <ul>
-    <li>Cart view shows you everything you added to the cart; items from the same restaurant will be grouped together</li>
-    <li>Click on a restaurant to view the full order</li>
+    <li>Cart view shows you everything you added to the cart; items from the same restaurant will be grouped together (left image)</li>
+    <li>Click on a restaurant to view the full order (right image)</li>
   </ul>
   <br>
   <div align="center">
