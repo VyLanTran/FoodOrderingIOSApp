@@ -14,11 +14,11 @@ Download the zip file of the project, import it in XCode and run
   </ul>
   <br>
   <div align="center">
-    <img width="300" alt="01" src="https://user-images.githubusercontent.com/85639418/217957849-0b954aea-8a46-43d8-ab47-93565596223d.png">
+    <img width="240" alt="01" src="https://user-images.githubusercontent.com/85639418/217957849-0b954aea-8a46-43d8-ab47-93565596223d.png">
     &emsp;&emsp;
-    <img width="300" alt="02" src="https://user-images.githubusercontent.com/85639418/217957868-f087a3f7-d8e7-4e3d-8ed2-8c5e05e733fa.png">
+    <img width="240" alt="02" src="https://user-images.githubusercontent.com/85639418/217957868-f087a3f7-d8e7-4e3d-8ed2-8c5e05e733fa.png">
     &emsp;&emsp;
-    <img width="310" alt="03" src="https://user-images.githubusercontent.com/85639418/217958017-b044dc08-cb72-47ad-8b0b-d93f98ea3264.png">
+    <img width="250" alt="03" src="https://user-images.githubusercontent.com/85639418/217958017-b044dc08-cb72-47ad-8b0b-d93f98ea3264.png">
   </div>
   <br>
   <p align="center"><b>Home view&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Browse view&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Cart view</p>
