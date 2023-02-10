@@ -53,7 +53,7 @@ Download the zip file of the project, import it in XCode and run
     <img width="346" alt="07" src="https://user-images.githubusercontent.com/85639418/217967021-ddb998bc-db3d-44ae-bacb-18bc84a56a6f.png">
   </div>
   <br>
-  <p align="center"><b>Dish detail list&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Cart updated</p>
+  <p align="center"><b>Dish detail list&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Cart icon updated</p>
 </div>
 <br><br>
 
