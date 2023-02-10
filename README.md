@@ -59,7 +59,7 @@ Download the zip file of the project, import it in XCode and run
 
 <div>
   <ul>
-    <li>The Cart view shows you everything you added to the cart; items from the same restaurant will be grouped together</li>
+    <li>Cart view shows you everything you added to the cart; items from the same restaurant will be grouped together</li>
     <li>Click on a restaurant to view the full order</li>
   </ul>
   <br>
