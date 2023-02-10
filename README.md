@@ -83,11 +83,11 @@ Download the zip file of the project, import it in XCode and run
   </ul>
   <br>
   <div align="center">
-    <img width="300" alt="10" src="https://user-images.githubusercontent.com/85639418/217973518-8f4ea2c1-f5b3-40e7-bb8d-1303d33c7f6b.png">
+    <img width="240" alt="10" src="https://user-images.githubusercontent.com/85639418/217973518-8f4ea2c1-f5b3-40e7-bb8d-1303d33c7f6b.png">
     &emsp;&emsp;
-    <img width="300" alt="11" src="https://user-images.githubusercontent.com/85639418/217973544-1b007887-39dd-4ae9-a3d4-c4881e3eee96.png">
+    <img width="240" alt="11" src="https://user-images.githubusercontent.com/85639418/217973544-1b007887-39dd-4ae9-a3d4-c4881e3eee96.png">
     &emsp;&emsp;
-    <img width="300" alt="12" src="https://user-images.githubusercontent.com/85639418/217973560-f252de95-b307-46c9-a0b6-c05c40a84d41.png">
+    <img width="240" alt="12" src="https://user-images.githubusercontent.com/85639418/217973560-f252de95-b307-46c9-a0b6-c05c40a84d41.png">
   </div>
   <br>
   <p align="center"><b>Cart view</p>
